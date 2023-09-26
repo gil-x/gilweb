@@ -1,7 +1,7 @@
 // Menu
 
 const mainMenu = document.querySelector(".nav");
-const animation = document.querySelector(".animation");
+const animation = document.querySelector(".intro__animation");
 const submenu = document.querySelector(".submenu");
 
 const toggleMobileMenu = () => {

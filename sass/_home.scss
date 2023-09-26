@@ -1,5 +1,9 @@
 .intro {
   background: var(--yellow);
+
+  &__text {
+    padding: 20px;
+  }
 }
 
 .service {
@@ -54,6 +58,21 @@
 
     &__title {
       grid-column-end: 4;
+    }
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-right: 200px solid #000;
+
+    &__text {
+      padding: 0 20px;
     }
   }
 }

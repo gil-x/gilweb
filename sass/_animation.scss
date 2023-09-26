@@ -1,0 +1,257 @@
+@keyframes look-right {
+  0% {
+  }
+  60% {
+    transform: translate(6px, 0);
+  }
+  70% {
+    transform: translate(6px, 0);
+  }
+  100% {
+  }
+}
+
+@keyframes look-down {
+  0%,
+  100% {
+    transform: translate(0, 0px);
+  }
+  30%,
+  70% {
+    transform: translate(-1px, 6px);
+  }
+}
+
+@keyframes headtest {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(-2deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes breathe {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-4deg);
+  }
+}
+
+@keyframes blink-top {
+  0% {
+    transform: translate(0) rotateZ(0);
+  }
+  50% {
+    transform: translate(-2px, 1px) rotateZ(-15deg);
+  }
+  60% {
+    transform: translate(-2px, 1px) rotateZ(-15deg);
+  }
+  100% {
+    transform: translate(0) rotateZ(0);
+  }
+}
+
+@keyframes blink-top-x2 {
+  0% {
+    transform: translate(0) rotateZ(0);
+  }
+  20% {
+    transform: translate(-2px, 1px) rotateZ(-15deg);
+  }
+  30% {
+    transform: translate(-2px, 3px) rotateZ(-15deg);
+  }
+  60% {
+    transform: translate(0) rotateZ(0);
+  }
+  70% {
+    transform: translate(-2px, 1px) rotateZ(-15deg);
+  }
+  90% {
+    transform: translate(-2px, 3px) rotateZ(-15deg);
+  }
+  100% {
+    transform: translate(0) rotateZ(0);
+  }
+}
+
+@keyframes blink-top-slow {
+  0% {
+    transform: translate(0) rotateZ(0);
+  }
+  20% {
+    transform: translate(-1px, 1px) rotateZ(-7deg);
+  }
+  80% {
+    transform: translate(-1px, 1px) rotateZ(-7deg);
+  }
+  100% {
+    transform: translate(0) rotateZ(0);
+  }
+}
+
+@keyframes blink-bottom {
+  0% {
+    transform: translate(0) rotateZ(0);
+  }
+  50% {
+    transform: translate(-1px, -2px) rotateZ(5deg);
+  }
+  60% {
+    transform: translate(-1px, -2px) rotateZ(5deg);
+  }
+  100% {
+    transform: translate(0) rotateZ(0);
+  }
+}
+
+@keyframes blink-bottom-x2 {
+  0% {
+    transform: translate(0) rotateZ(0);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotateZ(5deg);
+  }
+  30% {
+    transform: translate(-1px, -3px) rotateZ(5deg);
+  }
+  60% {
+    transform: translate(0) rotateZ(0);
+  }
+  70% {
+    transform: translate(-1px, -2px) rotateZ(5deg);
+  }
+  90% {
+    transform: translate(-1px, -3px) rotateZ(5deg);
+  }
+  100% {
+    transform: translate(0) rotateZ(0);
+  }
+}
+
+.intro__animation {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  pointer-events: none;
+  touch-action: none;
+  opacity: 0.075;
+  transition: opacity 0.7s;
+
+  &.up {
+    z-index: 10;
+    opacity: 0.5;
+  }
+
+  #svg {
+    width: auto;
+    height: 100%;
+    margin: 0 -55% -1% 0;
+    transform: translateX(50vw);
+    transition: transform 1.5s;
+
+    &.visible {
+      transform: translateX(0);
+    }
+  }
+}
+
+#pupil {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#pupil.look-right {
+  animation: look-right 2s 1 forwards;
+}
+
+#pupil.look-down {
+  animation: look-down 2s 1 forwards;
+}
+
+#head {
+  animation: headtest 6s infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#eyelider-top {
+  transform-box: fill-box;
+  transform-origin: right;
+}
+#eyelider-top.blink-top {
+  animation: blink-top 0.2s 1;
+}
+#eyelider-top.blink-top-x2 {
+  animation: blink-top-x2 0.5s 1;
+}
+#eyelider-top.blink-top-slow {
+  animation: blink-top-slow 2s 1;
+}
+
+#eyelider-bottom {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+#eyelider-bottom.blink-bottom {
+  animation: blink-bottom 0.2s 1;
+}
+
+#eyelider-bottom.blink-bottom-x2 {
+  animation: blink-bottom-x2 0.5s 1;
+}
+
+#body {
+  animation: breathe 6s infinite alternate;
+  transform-box: fill-box;
+  transform-origin: top;
+}
+
+@media (min-width: $bp-mobile) {
+  .intro__animation {
+    // height: 350%;
+    #svg {
+      margin: 0 -40% -1% 0;
+    }
+  }
+}
+
+@media (min-width: $bp-medium) {
+  .intro__animation {
+    position: static;
+    width: auto;
+    height: 200%;
+    opacity: 1;
+    z-index: auto;
+
+    #svg {
+      margin: 0 -60% -1% 0;
+    }
+  }
+}
+
+@media (min-width: $bp-hd) {
+  .intro__animation {
+    height: 150%;
+  }
+}
+
+@media (min-width: $bp-fhd) {
+  .intro__animation {
+    height: 140%;
+  }
+}

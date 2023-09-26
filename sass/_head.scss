@@ -23,10 +23,24 @@
   }
 }
 
+@keyframes reveal-logo {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  75% {
+    opacity: 1;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, calc(100% - 0px) 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+  }
+}
+
 .head {
   position: fixed;
   top: 0;
-  //   z-index: 5;
+  z-index: 5;
   background: rgba(255, 255, 255, 0.95);
   width: calc(100vw);
   box-sizing: border-box;
@@ -48,79 +62,6 @@
   }
 }
 
-// .nav {
-//   position: fixed;
-//   top: var(--header-h);
-//   left: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   box-sizing: border-box;
-//   padding: 0 50px;
-//   width: 100vw;
-//   height: calc(100vh - var(--header-h));
-//   background: var(--yellow);
-//   opacity: 0;
-//   transform: translateX(100vw);
-//   transition: transform 0.35s, opacity 0.4s;
-
-//   &.visible {
-//     transform: translateX(0);
-//     opacity: 1;
-//   }
-
-//   .ul {
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 10px 0;
-//   }
-
-//   .li {
-//     min-height: 40px;
-
-//     & > .submenu {
-//       max-height: 0;
-//       overflow: hidden;
-//       padding: 0;
-//       transition: all 0.25s;
-
-//       &.visible {
-//         max-height: 100vh;
-//         transform: translateX(20px);
-//         padding: 10px;
-//       }
-//     }
-//   }
-
-//   .link {
-//     display: block;
-//     color: var(--black);
-//     text-decoration: none;
-//     padding: 0 0 0 10px;
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-
-//     &::before {
-//       content: "▪ \00a0";
-//     }
-//   }
-
-//   .nav_social {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 20px;
-//     border-top: 1px solid var(--yellow-d3);
-
-//     .icon {
-//       &::before {
-//         font-size: 20vw;
-//       }
-//     }
-//   }
-// }
-
 .nav {
   position: fixed;
   top: 80px;
@@ -132,7 +73,7 @@
   padding: 0 50px;
   width: 100vw;
   height: calc(100vh - 80px);
-  background: $yellow;
+  background: var(--yellow);
   opacity: 0;
   transform: translateX(100vw);
   transition: transform 0.35s, opacity 0.4s;
@@ -167,7 +108,7 @@
 
   .link {
     display: block;
-    color: $black;
+    color: var(--black);
     text-decoration: none;
     padding: 0 0 0 10px;
     width: 100%;
@@ -178,13 +119,17 @@
     &::before {
       content: "▪ \00a0";
     }
+
+    &:active {
+      -webkit-tap-highlight-color: transparent;
+    }
   }
 
   .nav_social {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-top: 1px solid $yellow-d3;
+    border-top: 1px solid var(--yellow-d3);
 
     .icon {
       &::before {
@@ -227,9 +172,8 @@
 
 @media (min-width: $bp-medium) {
   .head {
-    width: 100vw;
+    width: var(--body-max-width);
     padding: 0;
-    // left: calc((100vw - var(--body-max-width)) / 2);
     background: var(--yellow);
     border-bottom: 5px solid var(--yellow-d3);
 
@@ -239,7 +183,9 @@
       height: 100%;
       background: var(--black);
       padding: 0 0 0 40px;
-      clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      animation: reveal-logo 1s 1 cubic-bezier(0.89, 0.47, 0.58, 0.96) forwards;
+
       &--img {
         filter: none;
         height: 70%;
@@ -256,7 +202,7 @@
     opacity: 1;
     transform: none;
     flex-direction: row;
-    width: auto;
+    // width: auto;
     height: 100%;
     flex-basis: 66.666%;
 
@@ -306,6 +252,10 @@
           .ul.submenu {
             pointer-events: all;
             animation: ul-appears 0.25s 0.25s 1 forwards;
+
+            & > .li {
+              transform: translateX(100vw);
+            }
 
             & > .li:nth-child(1) {
               animation: li-appears 0.25s 1 0.1s forwards;
