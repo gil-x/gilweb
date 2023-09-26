@@ -81,8 +81,8 @@ a {
 }
 
 .section {
-  margin: 0 0 80px;
-  padding: 20px;
+  margin: 0 0 40px;
+  padding: 0 20px;
 }
 
 .footer {
@@ -105,6 +105,9 @@ a {
 }
 
 @media (min-width: $bp-medium) {
+  .section {
+    padding: 20px 0;
+  }
 }
 
 @media (min-width: $bp-hd) {
