@@ -60,3 +60,35 @@ $bp-fhd: 1920px;
     --gutter: 20px;
   }
 }
+
+//==============
+//  SASS VARS   => TO BE REMOVED
+//==============
+//==============
+//  BREAKPOINTS
+//==============
+$bp-mobile: 600px;
+$bp-medium: 960px;
+$bp-screen-hd: 1280px;
+
+$yellow: rgba(255, 207, 2, 1);
+$yellow-l3: rgba(255, 236, 154, 1);
+$yellow-d3: rgba(180, 146, 1, 1);
+$purple: rgb(58, 1, 92);
+$blue: rgb(51, 92, 103);
+$red: rgb(165, 1, 4);
+$black: rgba(25, 20, 0, 1);
+$white: rgb(255, 255, 255);
+$font: rgba(0, 0, 0, 0.75);
+
+//==============
+//  FONTS
+//==============
+$font-root: 18px;
+$font-l: 25px;
+$font-s: 12px;
+
+//==============
+//  SIZES
+//==============
+$body-max-width: 1440px;
