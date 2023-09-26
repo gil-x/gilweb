@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href={{get_url(path="main.css")}} />
+    <title>
+      Développeur web expert CSS, eco-conception, Python, freelance Paris
+      Bretagne
+    </title>
+    <meta
+      name="description"
+      content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure."
+    />
+    <meta
+      name="description"
+      content="Je mets à votre disposition plus de 10 ans d'expérience dans la conception de sites web"
+    />
+  </head>
+  <body class="body">
+    {% include "header.html" %} {% block content %} {% endblock %}
+
+    <footer class="footer">
+      <p>Copyright ©2023 | Gino Ladowitch | Tous droits réservés</p>
+      <p>
+        <a class="a" href="#" rel="nofollow">Mentions légales</a>
+      </p>
+    </footer>
+
+    {# tera #}
+    <pre data-lang="json" class="tera hidden">{{ __tera_context }}</pre>
+
+    <script src="{{get_url(path="js/main.js")}}" defer></script>
+    {% if section.extra.menu is defined and section.extra.menu == 'home' %} 
+    <script src="{{get_url(path="js/animation.js")}}" defer></script>
+    {% endif %}
+  </body>
+</html>

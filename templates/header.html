@@ -1,0 +1,71 @@
+<header class="head">
+  <a class="head__logo" href="/" title="Revenir à l'accueil">
+    <img
+      class="head__logo--img"
+      src="img/logo.svg"
+      alt="Gil web logo"
+      title="Gil web"
+    />
+  </a>
+  <span class="head__menu__icon icon menu"></span>
+
+  <nav class="nav">
+    <ul class="ul">
+      <!-- <li
+        class="li {% if section.extra.menu is defined and section.extra.menu == 'home' %} active {% endif %}"
+      >
+        <a class="link" href="/">Accueil</a>
+      </li> -->
+      <li
+        class="li has-child {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}"
+      >
+        <a class="link with-child" href="/">Services</a>
+        <ul class="ul submenu">
+          <li class="li"><a class="link"  href="services/webmaster-freelance.html">Webmaster</a></li>
+          <li  class="li"><a class="link"  href="services/graphiste.html">Graphiste</a></li>
+          <li  class="li">
+            <a class="link"  href="services/developpement-web.html"
+              >Création de sites internets</a
+            >
+          </li>
+          <li  class="li"><a class="link" href="services/illustrateur.html">Illustrateur</a></li>
+          <li class="li">
+            <a class="link" href="services/developpement-applications.html"
+              >Développeur d'application</a
+            >
+          </li class="li">
+          <li class="li"><a class="link" href="services/consultant-web.html">Consultant</a></li>
+        </ul>
+      </li>
+
+      <li
+        class="li {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}"
+      >
+        <a class="link" href="/competences">Compétences</a>
+      </li>
+      <li
+        class="li {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% endif %}"
+      >
+        <a class="link" href="/blog">Blog</a>
+      </li>
+      <li
+        class="li {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
+      >
+        <a class="link" href="/contact">Contact</a>
+      </li>
+    </ul>
+
+    <div class="nav_social">
+      <a
+        href="https://www.instagram.com/gil_dessine/"
+        target="_blank"
+        class="icon instagram"
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/gino-ladowitch/"
+        target="_blank"
+        class="icon linkedin"
+      ></a>
+    </div>
+  </nav>
+</header>

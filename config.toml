@@ -1,6 +1,8 @@
 base_url = "https://gil-web.com"
 compile_sass = true
 build_search_index = true
+default_language = "fr"
+generate_feed = true
 
 [markdown]
 highlight_code = true

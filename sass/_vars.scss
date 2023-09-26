@@ -1,0 +1,62 @@
+//==============
+//  BREAKPOINTS
+//==============
+$bp-mobile: 600px;
+$bp-medium: 960px;
+$bp-hd: 1280px;
+$bp-fhd: 1920px;
+
+:root {
+  //==============
+  //  COLORS
+  //==============
+  --yellow: rgba(255, 207, 2, 1);
+  --yellow-l3: rgba(255, 236, 154, 1);
+  --yellow-d3: rgba(180, 146, 1, 1);
+  --purple: rgb(58, 1, 92);
+  --blue: rgb(51, 92, 103);
+  --red: rgb(165, 1, 4);
+  --black: rgba(25, 20, 0, 1);
+  --white: rgb(255, 255, 255);
+  --typo-black: rgba(0, 0, 0, 0.75);
+  //==============
+  //  FONTS
+  //==============
+  --font-root: 18px;
+  --font-large: 25px;
+  --font-small: 12px;
+  //==============
+  //  MEASURES
+  //==============
+  --gutter: 10px;
+  --body-max-width: 1440px;
+  --header-h: 80px;
+}
+
+.tera {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 40vw;
+  height: 70vh;
+  padding: 20px;
+  overflow-y: scroll;
+  color: yellowgreen;
+  background: black;
+  font-size: 13px;
+  font-family: monospace;
+  font-weight: bold;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $bp-mobile) {
+  :root {
+    //==============
+    //  MEASURES
+    //==============
+    --gutter: 20px;
+  }
+}

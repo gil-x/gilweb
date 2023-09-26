@@ -1,0 +1,96 @@
+{% extends "base.html" %} {% block content %}
+
+<h1 class="h1">{{section.title|safe}}</h1>
+
+<section class="section intro">
+  <div class="intro__text">
+    <h2 class="h2">Bonjour et bienvenue sur mon site.</h2>
+    <p>
+      Vous êtes à la recherche d'un <strong>webmaster freelance</strong>, sur
+      <strong>Paris</strong>, polyvalent, avec des compétences de
+      <strong>graphiste</strong>&nbsp;?<br />
+      Quelqu'un de passionné, sérieux, motivé et efficace&nbsp;?… Je suis votre
+      homme&nbsp;!
+    </p>
+    <p>
+      Fort de huit ans d'expérience en tant que travailleur indépendant sur
+      <strong>Paris</strong>, au contact d'agences web, d'entreprises,
+      d'association mais aussi de créateurs d'activité, je suis à même de
+      répondre à toute problématique web seul ou avec une petite équipe.
+    </p>
+    <p class="intro__signature">Gino Ladowitch</p>
+  </div>
+</section>
+
+<section class="section services">
+  <h2 class="services__title h2">Mes services</h2>
+
+  <article class="service">
+    <h3 class="service--title h3">Webmaster</h3>
+    <p class="service--p">
+      Je peux vous aider et prendre en charge votre site&nbsp;: mettre en ligne
+      les contenus, l'améliorer, soigner son référencement.
+    </p>
+    <a class="service--link" href="services/webmaster-freelance"
+      >J'ai besoin d'un webmaster&nbsp;!</a
+    >
+  </article>
+
+  <article class="service">
+    <h3 class="service--title h3">Graphiste</h3>
+    <p class="service--p">
+      Vous pouvez me confier la création graphique de vos supports de
+      communication, maquettes, infographies, pictos, logos, identité graphique.
+    </p>
+    <a class="service--link" href="services/graphiste"
+      >Embellir votre communication</a
+    >
+  </article>
+
+  <article class="service">
+    <h3 class="service--title h3">Création de site internet</h3>
+    <p class="service--p">
+      Votre site internet est dépassé, vous créez votre activité ? Je peux
+      prendre en charge la refonte de votre site ou sa création de A à Z.
+    </p>
+    <a class="service--link" href="services/developpement-web"
+      >Créons un site web…</a
+    >
+  </article>
+
+  <article class="service">
+    <h3 class="service--title h3">Illustrateur</h3>
+    <p class="service--p">
+      Je peux me vanter d'avoir un bon coup de crayon&nbsp;! Que ce soit de
+      l'illustration traditionnelle, humoristique ou technique, j'aime et je
+      sais faire.
+    </p>
+    <a class="service--link" href="services/illustrateur"
+      >Découvrir mon univers graphique</a
+    >
+  </article>
+
+  <article class="service">
+    <h3 class="service--title h3">Développeur d'applications</h3>
+    <p class="service--p">
+      Je peux vous créer de petits programmes sur-mesure&nbsp;: utilitaires, web
+      scraping, automatisation de tâches.
+    </p>
+    <a class="service--link" href="services/developpement-applications"
+      >En savoir plus sur cette prestation</a
+    >
+  </article>
+
+  <article class="service">
+    <h3 class="service--title h3">Consultant</h3>
+    <p class="service--p">
+      Si vous êtes perdu au milieu des nouvelles technologies du web, je peux
+      vous épauler pour mener à bien vos projets.
+    </p>
+    <a class="service--link" href="services/consultant-web"
+      >Demander un conseil</a
+    >
+  </article>
+</section>
+
+{{ section.content | safe }} {% endblock content %}
