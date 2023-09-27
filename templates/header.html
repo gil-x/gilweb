@@ -2,7 +2,7 @@
   <a class="head__logo" href="/" title="Revenir à l'accueil">
     <img
       class="head__logo--img"
-      src="img/logo.svg"
+      src="{{ get_url(path='img/logo.svg') }}"
       alt="Gil web logo"
       title="Gil web"
     />
@@ -51,7 +51,7 @@
       <li
         class="li {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
       >
-        <a class="link" href="/contact">Contact</a>
+        <a class="link" href="{{ get_url(path='@/contact.md', lang=lang) }}">Contact</a>
       </li>
     </ul>
 
@@ -59,11 +59,13 @@
       <a
         href="https://www.instagram.com/gil_dessine/"
         target="_blank"
+        aria-label="Go see my Instagram account"
         class="icon instagram"
       ></a>
       <a
         href="https://www.linkedin.com/in/gino-ladowitch/"
         target="_blank"
+        aria-label="Let's keep in touch on LinkedIn"
         class="icon linkedin"
       ></a>
     </div>

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" href={{get_url(path="main.css")}} />
+    {#
+    {% if page.extra.menu is defined and page.extra.menu == 'contact' %} 
+    <link rel="stylesheet" href={{get_url(path="contact.css")}} /> {% endif %}
+    #}
     <title>
       Développeur web expert CSS, eco-conception, Python, freelance Paris
       Bretagne

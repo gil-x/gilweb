@@ -102,56 +102,142 @@
   <div class="references__container">
     <img
       class="references__ref"
-      src="img/customers/logo_institut_curie.webp"
+      src="{{ get_url(path='img/customers/logo_institut_curie.webp') }}"
       alt="Institut Curie"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_agirc_arrco.webp"
+      src="{{ get_url(path='img/customers/logo_agirc_arrco.webp') }}"
       alt="AGIRC ARRCO"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_afd.webp"
+      src="{{ get_url(path='img/customers/logo_afd.webp') }}"
       alt="Alliance Française de Développement"
     />
-    <img class="references__ref" src="img/customers/logo_cgi.webp" alt="CGI" />
     <img
       class="references__ref"
-      src="img/customers/logo_fidh.webp"
+      src="{{ get_url(path='img/customers/logo_cgi.webp') }}"
+      alt="CGI"
+    />
+    <img
+      class="references__ref"
+      src="{{ get_url(path='img/customers/logo_fidh.webp') }}"
       alt="Fédération Internationale pour les Droits Humains"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_eurosport.webp"
+      src="{{ get_url(path='img/customers/logo_eurosport.webp') }}"
       alt="Eurosport"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_ecofolio.webp"
+      src="{{ get_url(path='img/customers/logo_ecofolio.webp') }}"
       alt="Ecofolio"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_mgen.webp"
+      src="{{ get_url(path='img/customers/logo_mgen.webp') }}"
       alt="MGEN"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_fnam.webp"
+      src="{{ get_url(path='img/customers/logo_fnam.webp') }}"
       alt="Fédération Nationale André Maginot"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_musee_curie.webp"
+      src="{{ get_url(path='img/customers/logo_musee_curie.webp') }}"
       alt="Musée Curie"
     />
     <img
       class="references__ref"
-      src="img/customers/logo_ratp.webp"
+      src="{{ get_url(path='img/customers/logo_ratp.webp') }}"
       alt="RATP"
     />
   </div>
 </section>
 
 {{ section.content | safe }} {% endblock content %}
+
+<form class="form" action="" method="">
+  <div class="form__side">
+    <h2 class="form__title h2">Vous êtes...</h2>
+    <p class="form__field">
+      <label class="form__field--label" for="name">Nom :</label>
+      <input class="form__field--input" type="text" name="name" value="" />
+    </p>
+    <p class="form__field">
+      <label class="form__field--label" for="firstname">Prénom :</label>
+      <input class="form__field--input" type="text" name="firstname" value="" />
+    </p>
+    <p class="form__field">
+      <label class="form__field--label" for="lastname">Nom :</label>
+      <input class="form__field--input" type="text" name="lastname" value="" />
+    </p>
+    <p class="form__field">
+      <label class="form__field--label" for="society">Société :</label>
+      <input class="form__field--input" type="text" name="society" value="" />
+    </p>
+    <p class="form__field">
+      <label class="form__field--label" for="website">Site web actuel :</label>
+      <input class="form__field--input" type="text" name="website" value="" />
+    </p>
+    <p class="form__field">
+      <label class="form__field--label" for="email">Email* :</label>
+      <input class="form__field--input" type="email" name="email" value="" />
+    </p>
+  </div>
+  <div class="form__side">
+    <h2 class="form__title h2">Objet de votre message</h2>
+    <ul class="form__list">
+      <li class="form__list--item">
+        <input type="checkbox" name="devis" id="devis" />&nbsp;<label
+          for="devis"
+          >Demande de devis</label
+        >
+      </li>
+      <li class="form__list--item">
+        <input
+          type="checkbox"
+          name="collaboration"
+          id="collaboration"
+        />&nbsp;<label for="collaboration">Proposition de collaboration</label>
+      </li>
+      <li class="form__list--item">
+        <input type="checkbox" name="copyright" id="copyright" />&nbsp;<label
+          for="copyright"
+          >Droits d'auteur</label
+        >
+      </li>
+      <li class="form__list--item">
+        <input type="checkbox" name="question" id="question" />&nbsp;<label
+          for="question"
+          >Question</label
+        >
+      </li>
+      <li class="form__list--item">
+        <input type="checkbox" name="autre" id="autre" />&nbsp;<label
+          for="autre"
+          >Autre</label
+        >
+      </li>
+    </ul>
+    <h3 class="h3">Message</h3>
+    <textarea
+      class="form__textarea"
+      name="message"
+      rows="10"
+      cols="40"
+    ></textarea>
+  </div>
+  <div class="form__send">
+    <input
+      class="form__send--submit"
+      id="submit"
+      type="submit"
+      value="envoyer"
+    />
+  </div>
+  <input class="form__hidden" type="hidden" name="phase" value="traitement" />
+</form>
