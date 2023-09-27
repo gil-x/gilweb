@@ -75,6 +75,18 @@ $bp-fhd: 1920px;
 
 @media (min-width: $bp-medium) {
   :root {
+    --body-max-width: 940px;
+  }
+}
+
+@media (min-width: $bp-hd) {
+  :root {
+    --body-max-width: 1280px;
+  }
+}
+
+@media (min-width: $bp-fhd) {
+  :root {
     --body-max-width: 1440px;
   }
 }

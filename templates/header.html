@@ -11,15 +11,11 @@
 
   <nav class="nav">
     <ul class="ul">
-      <!-- <li
-        class="li {% if section.extra.menu is defined and section.extra.menu == 'home' %} active {% endif %}"
-      >
-        <a class="link" href="/">Accueil</a>
-      </li> -->
+
       <li
-        class="li has-child {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}"
+        class="li has-child"
       >
-        <a class="link with-child" href="/">Services</a>
+        <a class="link with-child  {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}" href="/">Services</a>
         <ul class="ul submenu">
           <li class="li"><a class="link"  href="services/webmaster-freelance.html">Webmaster</a></li>
           <li  class="li"><a class="link"  href="services/graphiste.html">Graphiste</a></li>
@@ -39,19 +35,25 @@
       </li>
 
       <li
-        class="li {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}"
+        class="li "
       >
-        <a class="link" href="/competences">Compétences</a>
+        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}" href="/competences">Compétences</a>
+      </li>
+
+      <li
+        class="li "
+      >
+        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'about' %} active {% endif %}" href="{{ get_url(path='@/about.md', lang=lang) }}">A propos</a>
       </li>
       <li
-        class="li {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% endif %}"
+        class="li "
       >
-        <a class="link" href="/blog">Blog</a>
+        <a class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% endif %}" href="/blog">Blog</a>
       </li>
       <li
-        class="li {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
+        class="li "
       >
-        <a class="link" href="{{ get_url(path='@/contact.md', lang=lang) }}">Contact</a>
+        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}" href="{{ get_url(path='@/contact.md', lang=lang) }}">Contact</a>
       </li>
     </ul>
 

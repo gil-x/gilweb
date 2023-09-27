@@ -2,6 +2,7 @@
 @import "head";
 @import "home";
 @import "contact";
+@import "about";
 @import "animation";
 
 @font-face {
@@ -109,10 +110,11 @@ a {
   .section {
     padding: 20px 0;
   }
-}
 
-@media (min-width: $bp-hd) {
   .body {
     padding: 0 calc((100vw - var(--body-max-width)) / 2);
   }
+}
+
+@media (min-width: $bp-hd) {
 }
