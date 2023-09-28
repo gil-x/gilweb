@@ -11,49 +11,68 @@
 
   <nav class="nav">
     <ul class="ul">
-
-      <li
-        class="li has-child"
-      >
-        <a class="link with-child  {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}" href="/">Services</a>
+      <li class="li has-child">
+        <a
+          class="link with-child {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}"
+          href="/"
+          >Services</a
+        >
         <ul class="ul submenu">
-          <li class="li"><a class="link"  href="services/webmaster-freelance.html">Webmaster</a></li>
-          <li  class="li"><a class="link"  href="services/graphiste.html">Graphiste</a></li>
-          <li  class="li">
-            <a class="link"  href="services/developpement-web.html"
+          <li class="li">
+            <a class="link" href="services/webmaster-freelance.html"
+              >Webmaster</a
+            >
+          </li>
+          <li class="li">
+            <a class="link" href="services/graphiste.html">Graphiste</a>
+          </li>
+          <li class="li">
+            <a class="link" href="services/developpement-web.html"
               >Création de sites internets</a
             >
           </li>
-          <li  class="li"><a class="link" href="services/illustrateur.html">Illustrateur</a></li>
+          <li class="li">
+            <a class="link" href="services/illustrateur.html">Illustrateur</a>
+          </li>
           <li class="li">
             <a class="link" href="services/developpement-applications.html"
               >Développeur d'application</a
             >
-          </li class="li">
-          <li class="li"><a class="link" href="services/consultant-web.html">Consultant</a></li>
+          </li>
+          <li class="li">
+            <a class="link" href="services/consultant-web.html">Consultant</a>
+          </li>
         </ul>
       </li>
 
-      <li
-        class="li "
-      >
-        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}" href="/competences">Compétences</a>
+      <li class="li">
+        <a
+          class="link {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}"
+          href="{{ get_url(path='@/skills.md', lang=lang) }}"
+          >Compétences</a
+        >
       </li>
 
-      <li
-        class="li "
-      >
-        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'about' %} active {% endif %}" href="{{ get_url(path='@/about.md', lang=lang) }}">A propos</a>
+      <li class="li">
+        <a
+          class="link {% if page.extra.menu is defined and page.extra.menu == 'about' %} active {% endif %}"
+          href="{{ get_url(path='@/about.md', lang=lang) }}"
+          >A propos</a
+        >
       </li>
-      <li
-        class="li "
-      >
-        <a class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% endif %}" href="/blog">Blog</a>
+      <li class="li">
+        <a
+          class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% endif %}"
+          href="/blog"
+          >Blog</a
+        >
       </li>
-      <li
-        class="li "
-      >
-        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}" href="{{ get_url(path='@/contact.md', lang=lang) }}">Contact</a>
+      <li class="li">
+        <a
+          class="link {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
+          href="{{ get_url(path='@/contact.md', lang=lang) }}"
+          >Contact</a
+        >
       </li>
     </ul>
 

@@ -2,6 +2,70 @@
 
 <h1 class="h1">{{section.title|safe}}</h1>
 
+<!-- <form action="{{ get_url(path='php/target.php') }}" method="post">
+  <label for="word">Mot :</label>
+  <input type="text" id="word" name="word" required />
+  <button type="submit">Envoyer</button>
+</form> -->
+
+<form id="myForm">
+  <label for="firstname">Prénom :</label>
+  <input type="text" id="firstname" name="firstname" value="John" required />
+
+  <label for="lastname">Nom :</label>
+  <input type="text" id="lastname" name="lastname" value="Doe" required />
+
+  <label for="society">Société :</label>
+  <input type="text" id="society" name="society" value="JD Inc" required />
+
+  <label for="website">Site Web Actuel :</label>
+  <input type="text" id="website" name="website" value="jd.com" required />
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" value="jd@jd.com" required />
+
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <button type="button" onclick="submitForm()">Envoyer</button>
+</form>
+
+<!-- <form id="myForm">
+  <label for="firstname">Prénom :</label>
+  <input type="text" id="firstname" name="firstname" value="John" required />
+
+  <label for="lastname">Nom :</label>
+  <input type="text" id="lastname" name="lastname" value="Doe" required />
+
+  <label for="society">Société :</label>
+  <input type="text" id="society" name="society" value="JD Inc" required />
+
+  <label for="website">Site Web Actuel :</label>
+  <input type="text" id="website" name="website" value="jd.com" required />
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" value="jd@jd.com" required />
+
+  <input type="checkbox" id="collab" name="collab" />
+  <label for="collab">Collaboration</label>
+
+  <input type="checkbox" id="question" name="question" />
+  <label for="question">Question</label>
+
+  <input type="checkbox" id="other" name="other" />
+  <label for="other">Autre</label>
+
+  <label for="message">Message :</label>
+  <textarea
+    id="message"
+    name="message"
+    rows="4"
+    value="Hello!"
+    required
+  ></textarea>
+
+  <button type="button" onclick="submitForm()">Envoyer</button>
+</form> -->
+
 <section class="intro">
   <div class="intro__text">
     <h2 class="h2">Bonjour et bienvenue sur mon site.</h2>
@@ -228,3 +292,11 @@
     </li>
   </ul>
 </main>
+
+<!-- <form method="post" action="https://demo8.gil-web.com/target.php"></form> -->
+<form action="{{ get_url(path='php/target.php') }}" method="post">
+  <!-- <form action="php/target.php" method="post"> -->
+  <label for="word">Mot :</label>
+  <input type="text" id="word" name="word" required />
+  <button type="submit">Envoyer</button>
+</form>

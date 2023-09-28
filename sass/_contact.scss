@@ -6,12 +6,24 @@
 
     &:first-child {
       border-bottom: 1px solid var(--gray-d1);
+      // background: orange;
+    }
+
+    &:nth-child(2) {
+      padding: 0 0 20px;
+      // background: red;
     }
   }
 
   &__list {
     list-style-type: none;
     padding: 0;
+
+    & > li:last-child {
+      // width: 0;
+      // height: 0;
+      // overflow: hidden;
+    }
   }
 
   &__field {
@@ -23,7 +35,6 @@
 
     &--input {
       flex-basis: 30%;
-
       border-radius: 10px;
       border: 1px solid var(--gray-d3);
     }
@@ -38,21 +49,28 @@
 
   &__send {
     display: flex;
-    // align-items: center;
     justify-content: center;
     grid-row-start: 1;
     grid-row-end: 3;
 
     &--submit {
+      width: 100%;
       padding: 20px 40px;
-      // font-size: var(--font-large);
       text-transform: uppercase;
+      text-align: center;
       border: none;
+      // border: 0 solid transparent;
       border-bottom: 5px solid var(--yellow-d3);
       border-radius: 10px;
       background: var(--yellow);
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
       transition: transform 0.1s;
+
+      // &:active,
+      // &:focus {
+      //   border: none;
+      //   border: 0 solid transparent;
+      // }
     }
   }
 }
@@ -66,7 +84,8 @@
       "action action";
     gap: 20px;
     // background: orange;
-    &__side {
+    &__side,
+    &__side:nth-child(2) {
       padding: 20px;
       border-radius: 10px;
       border: 1px solid var(--gray-d1);
@@ -88,6 +107,8 @@
       grid-area: action;
 
       &--submit {
+        width: auto;
+        padding: 20px 80px;
         cursor: pointer;
 
         &:hover {

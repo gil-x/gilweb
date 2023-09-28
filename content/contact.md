@@ -6,13 +6,9 @@ template = "page.html"
 menu = "contact"
 +++
 
-<form class="form" action="" method="">
+<form class="form" id="myForm">
   <div class="form__side">
     <h2 class="form__title h2">Vous êtes...</h2>
-    <p class="form__field">
-      <label class="form__field--label" for="name">Nom :</label>
-      <input class="form__field--input" type="text" name="name" value="" />
-    </p>
     <p class="form__field">
       <label class="form__field--label" for="firstname">Prénom :</label>
       <input class="form__field--input" type="text" name="firstname" value="" />
@@ -22,8 +18,8 @@ menu = "contact"
       <input class="form__field--input" type="text" name="lastname" value="" />
     </p>
     <p class="form__field">
-      <label class="form__field--label" for="society">Société :</label>
-      <input class="form__field--input" type="text" name="society" value="" />
+      <label class="form__field--label" for="company">Société :</label>
+      <input class="form__field--input" type="text" name="company" value="" />
     </p>
     <p class="form__field">
       <label class="form__field--label" for="website">Site web actuel :</label>
@@ -63,9 +59,15 @@ menu = "contact"
         >
       </li>
       <li class="form__list--item">
-        <input type="checkbox" name="autre" id="autre" />&nbsp;<label
-          for="autre"
+        <input type="checkbox" name="other" id="autre" />&nbsp;<label
+          for="other"
           >Autre</label
+        >
+      </li>
+      <li class="form__list--item">
+        <input type="checkbox" name="personnal" id="autre" />&nbsp;<label
+          for="personnal"
+          >Personnel</label
         >
       </li>
     </ul>
@@ -74,7 +76,7 @@ menu = "contact"
   </div>
 
   <div class="form__send">
-    <input class="form__send--submit" id="submit" type="submit" value="envoyer" />
+    <button class="form__send--submit" id="submit" onclick="submitForm()">envoyer</button>
   </div>
-  <input class="form__hidden" type="hidden" name="phase" value="traitement" />
+  <!-- <input class="form__hidden" type="hidden" name="phase" value="traitement" /> -->
 </form>
