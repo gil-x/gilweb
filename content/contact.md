@@ -76,7 +76,6 @@ menu = "contact"
   </div>
 
   <div class="form__send">
-    <button class="form__send--submit" id="submit" onclick="submitForm()">envoyer</button>
+    <button class="form__send--submit" id="submit" onclick="submitForm()">Envoyer</button>
   </div>
-  <!-- <input class="form__hidden" type="hidden" name="phase" value="traitement" /> -->
 </form>

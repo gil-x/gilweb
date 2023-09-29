@@ -2,70 +2,6 @@
 
 <h1 class="h1">{{section.title|safe}}</h1>
 
-<!-- <form action="{{ get_url(path='php/target.php') }}" method="post">
-  <label for="word">Mot :</label>
-  <input type="text" id="word" name="word" required />
-  <button type="submit">Envoyer</button>
-</form> -->
-
-<form id="myForm">
-  <label for="firstname">Prénom :</label>
-  <input type="text" id="firstname" name="firstname" value="John" required />
-
-  <label for="lastname">Nom :</label>
-  <input type="text" id="lastname" name="lastname" value="Doe" required />
-
-  <label for="society">Société :</label>
-  <input type="text" id="society" name="society" value="JD Inc" required />
-
-  <label for="website">Site Web Actuel :</label>
-  <input type="text" id="website" name="website" value="jd.com" required />
-
-  <label for="email">Email :</label>
-  <input type="email" id="email" name="email" value="jd@jd.com" required />
-
-  <textarea id="message" name="message" rows="4" required></textarea>
-
-  <button type="button" onclick="submitForm()">Envoyer</button>
-</form>
-
-<!-- <form id="myForm">
-  <label for="firstname">Prénom :</label>
-  <input type="text" id="firstname" name="firstname" value="John" required />
-
-  <label for="lastname">Nom :</label>
-  <input type="text" id="lastname" name="lastname" value="Doe" required />
-
-  <label for="society">Société :</label>
-  <input type="text" id="society" name="society" value="JD Inc" required />
-
-  <label for="website">Site Web Actuel :</label>
-  <input type="text" id="website" name="website" value="jd.com" required />
-
-  <label for="email">Email :</label>
-  <input type="email" id="email" name="email" value="jd@jd.com" required />
-
-  <input type="checkbox" id="collab" name="collab" />
-  <label for="collab">Collaboration</label>
-
-  <input type="checkbox" id="question" name="question" />
-  <label for="question">Question</label>
-
-  <input type="checkbox" id="other" name="other" />
-  <label for="other">Autre</label>
-
-  <label for="message">Message :</label>
-  <textarea
-    id="message"
-    name="message"
-    rows="4"
-    value="Hello!"
-    required
-  ></textarea>
-
-  <button type="button" onclick="submitForm()">Envoyer</button>
-</form> -->
-
 <section class="intro">
   <div class="intro__text">
     <h2 class="h2">Bonjour et bienvenue sur mon site.</h2>
@@ -84,11 +20,11 @@
     </p>
     <p class="intro__signature">Gino Ladowitch</p>
   </div>
-  <div class="intro__animation">{% include "animation.html" %}</div>
+  <div class="intro__animation">{% include "parts/animation.html" %}</div>
 </section>
 
 <section class="section services">
-  <h2 class="services__title h2">Mes services</h2>
+  <h2 class="section__title h2">Mes services</h2>
 
   <article class="service">
     <h3 class="service--title h3">Webmaster</h3>
@@ -159,7 +95,7 @@
 </section>
 
 <section class="section references">
-  <h2 class="references__title h2">Quelques références</h2>
+  <h2 class="section__title h2">Quelques références</h2>
   <p class="references__p">
     C'est pas pour me vanter mais... j'ai travaillé pour eux :
   </p>
@@ -224,79 +160,63 @@
 
 {{ section.content | safe }} {% endblock content %}
 
-<aside class="aside">
-  {{ get_img(path='img/gil_about.webp', alt="Gino Ladowitch") }}"
-</aside>
-<h2>Je suis un grand timide</h2>
+<main class="main-page">
+  <article class="main-page__head">
+    {{ get_img(path='img/gil_about.webp', alt="Gino Ladowitch", cls="side-img")
+    }}
 
-<main class="main">
-  <p>
-    Je n'aime pas trop parler de moi, mais bon… Si on doit travailler ensemble,
-    il faudra bien faire connaissance !
-  </p>
-  <p>Donc, une fois n'est pas coutume, je fais le premier pas.</p>
+    <h2 class="h2">Je suis un grand timide...</h2>
 
-  <h2>Petite biographie</h2>
-  <p>
-    Humain âgé de 38 ans et originaire de Toulouse, je suis ce que l’on peut
-    appeler un geek : même si je n’ai eu mon premier ordinateur qu'en 2006, j’ai
-    vite rattrapé mon retard.
-  </p>
-  <p>
-    Armé d’un petit talent en dessin (que j’ai beaucoup perfectionné sur les
-    bancs de l’école : dessiner est un très bon moyen de s’évader sans attirer
-    l’attention), de deux ans de FAC de maths / informatique et de ma première
-    bécane, j’ai suivi une petite formation en DAO/PAO.
-  </p>
-  <p>
-    À partir de là j’ai pu commencer à travailler de manière sporadique dans le
-    sud, mais c’est surtout depuis 2010, quand je suis arrivé à Paris, que j’ai
-    pu travailler régulièrement avec une agence web.
-  </p>
-  <p>
-    Commençant comme graphiste, j’ai rapidement fait du webdesign, et au contact
-    de développeurs, j’ai moi-même commencé à regarder comment ça se passe dans
-    le code… Et ça m’a plu !
-  </p>
-  <p>
-    La plus grande partie de mon apprentissage est autodidacte, toutefois fin
-    2017 j’ai intégré une formation d’un an en MOOC auprès de l’école
-    OpenClassrooms en développement Python, afin de consolider mes compétences
-    en programmation et maîtriser ce fabuleux langage.
-  </p>
-  <p>
-    À côté de tout ça j’essaie de garder un peu de temps à consacrer à la
-    création et à des projets personnels. Je pratique la peinture à l’huile, le
-    dessin au fusain. En loisirs non productif, j’avoue avoir un faible pour les
-    jeux vidéos.
-  </p>
+    <p>
+      Je n'aime pas trop parler de moi, mais bon… Si on doit travailler
+      ensemble, il faudra bien faire connaissance !
+    </p>
+    <p>Donc, une fois n'est pas coutume, je fais le premier pas.</p>
+  </article>
 
-  <h2>Statut</h2>
+  <article class="main-page__article">
+    <h2 class="h2">Petite biographie</h2>
+    <p>
+      Humain âgé de 38 ans et originaire de Toulouse, je suis ce que l’on peut
+      appeler un geek : même si je n’ai eu mon premier ordinateur qu'en 2006,
+      j’ai vite rattrapé mon retard.
+    </p>
+    <p>
+      Armé d’un petit talent en dessin (que j’ai beaucoup perfectionné sur les
+      bancs de l’école : dessiner est un très bon moyen de s’évader sans attirer
+      l’attention), de deux ans de FAC de maths / informatique et de ma première
+      bécane, j’ai suivi une petite formation en DAO/PAO.
+    </p>
+    <p>
+      À partir de là j’ai pu commencer à travailler de manière sporadique dans
+      le sud, mais c’est surtout depuis 2010, quand je suis arrivé à Paris, que
+      j’ai pu travailler régulièrement avec une agence web.
+    </p>
+    <p>
+      Commençant comme graphiste, j’ai rapidement fait du webdesign, et au
+      contact de développeurs, j’ai moi-même commencé à regarder comment ça se
+      passe dans le code… Et ça m’a plu !
+    </p>
+  </article>
 
-  <p>Aujourd’hui je cumule plusieurs statuts :</p>
-
-  <ul>
-    <li>
-      La Maison des Artistes : c’est un régime très proche de celui des auto
-      entrepreneurs (mais antérieur) réservé aux artistes auteurs, plasticiens,
-      graphistes… Les charges sont légères, l’administratif léger (mais y en a
-      toujours trop à mon goût). Mon numéro d’ordre est L987679 et mon numéro
-      SIREN 488 238 817.
-    </li>
-    <li>
-      Être humain : l’argent n’est pas une fin en soi, aussi, si vous avez un
-      projet éthique particulièrement emballant, ou simplement peu de moyens
-      financiers mais de quoi donner le change, je suis favorable à l’échange de
-      services et au paiement en nature. N’hésitez pas à me contacter pour en
-      discuter.
-    </li>
-  </ul>
+  <article class="main-page__article">
+    <h2 class="h2">Statut</h2>
+    <p>Aujourd’hui je cumule plusieurs statuts :</p>
+    <ul>
+      <li>
+        La Maison des Artistes : c’est un régime très proche de celui des auto
+        entrepreneurs (mais antérieur) réservé aux artistes auteurs,
+        plasticiens, graphistes… Les charges sont légères, l’administratif léger
+        (mais y en a toujours trop à mon goût). Mon numéro d’ordre est L987679
+        et mon numéro SIREN 488 238 817.
+      </li>
+      <li>
+        Être humain : l’argent n’est pas une fin en soi, aussi, si vous avez un
+        projet éthique particulièrement emballant, ou simplement peu de moyens
+        financiers mais de quoi donner le change, je suis favorable à l’échange
+        de services et au paiement en nature. N’hésitez pas à me contacter pour
+        en discuter.
+      </li>
+    </ul>
+  </article>
 </main>
-
-<!-- <form method="post" action="https://demo8.gil-web.com/target.php"></form> -->
-<form action="{{ get_url(path='php/target.php') }}" method="post">
-  <!-- <form action="php/target.php" method="post"> -->
-  <label for="word">Mot :</label>
-  <input type="text" id="word" name="word" required />
-  <button type="submit">Envoyer</button>
-</form>
