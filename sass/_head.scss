@@ -247,6 +247,12 @@
             & > .li:nth-child(6) {
               animation: li-appears 0.25s 1 0.6s forwards;
             }
+            & > .li:nth-child(7) {
+              animation: li-appears 0.25s 1 0.7s forwards;
+            }
+            & > .li:nth-child(8) {
+              animation: li-appears 0.25s 1 0.8s forwards;
+            }
           }
         }
       }
