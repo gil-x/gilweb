@@ -1,3 +1,7 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% if page.title is defined %}
 <h1 class="h1">{{ page.title }}</h1>
-{{ page.content | safe }} {% endblock content %}
+{% elif section.title is defined %}
+<h1 class="h1">{{ section.title }}</h1>
+{% endif %} {% if page.content is defined %} {{ page.content | safe }} {% elif
+section.content is defined %} {{ section.content | safe }} {% endif %}
+{%endblock content %}

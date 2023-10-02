@@ -14,10 +14,17 @@
       <li class="li has-child">
         <a
           class="link with-child {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}"
-          href="/"
+          href="{{ get_url(path='@/services/_index.md', lang=lang) }}"
           >Services</a
         >
         <ul class="ul submenu">
+          <li class="li">
+            <a
+              class="link"
+              href="{{ get_url(path='@/services/ux.md', lang=lang) }}"
+              >UX/UI</a
+            >
+          </li>
           <li class="li">
             <a class="link" href="services/webmaster-freelance.html"
               >Webmaster</a
