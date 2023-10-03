@@ -4,9 +4,17 @@
   &__side--img {
     width: calc(33.333vw - 20px);
     height: 40vh;
-    margin: 0 20px 40px 0;
+    margin: 10px 20px 10px 0;
     float: left;
     object-fit: cover;
+  }
+
+  &__side--title {
+    &.h2 {
+      margin: 60px 0 0;
+    }
+
+    // background: red;
   }
 }
 
@@ -43,10 +51,11 @@
     grid-template-columns: 1fr 1fr;
     // grid-template-columns: 1fr 720px;
     gap: 0 20px;
-    // padding: 0 20px;
+    // padding: 0;
 
     &__side--img {
       max-width: 100%;
+      // margin: 5px 20px 10px 0;
       // width: calc((100vw - 40px) / 2);
     }
   }
@@ -58,6 +67,7 @@
     // grid-template-columns: 33.333% 66.666%;
     // grid-template-columns: 1fr 1fr;
     grid-template-columns: 1fr 720px;
+    padding: 0;
     // gap: 0 20px;
     // padding: 0 20px;
 

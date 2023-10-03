@@ -12,52 +12,22 @@ menu = "about"
 
 {{ get_img(path='img/gil_about.webp', alt="Gino Ladowitch", cls="main-dual__side--img") }}
 
-  <article class="main-dual__side--text">
-    <h2 class="h2">Je suis un grand timide...</h2>
-    <p>
-      Je n'aime pas trop parler de moi, mais bon… Si on doit travailler
-      ensemble, il faudra bien faire connaissance !
-    </p>
-    <p>Donc, une fois n'est pas coutume, je fais le premier pas.</p>
-    <h2 class="h2 clear">Petite biographie</h2>
-    <p>
-      Humain âgé de 38 ans et originaire de Toulouse, je suis ce que l’on peut
-      appeler un geek : même si je n’ai eu mon premier ordinateur qu'en 2006,
-      j’ai vite rattrapé mon retard.
-    </p>
-    <p>
-      Armé d’un petit talent en dessin (que j’ai beaucoup perfectionné sur les
-      bancs de l’école : dessiner est un très bon moyen de s’évader sans attirer
-      l’attention), de deux ans de FAC de maths / informatique et de ma première
-      bécane, j’ai suivi une petite formation en DAO/PAO.
-    </p>
-    <p>
-      À partir de là j’ai pu commencer à travailler de manière sporadique dans
-      le sud, mais c’est surtout depuis 2010, quand je suis arrivé à Paris, que
-      j’ai pu travailler régulièrement avec une agence web.
-    </p>
-    <p>
-      Commençant comme graphiste, j’ai rapidement fait du webdesign, et au
-      contact de développeurs, j’ai moi-même commencé à regarder comment ça se
-      passe dans le code… Et ça m’a plu !
-    </p>
-    <h2 class="h2">Statut</h2>
-    <p>Aujourd’hui je cumule plusieurs statuts :</p>
-    <ul>
-      <li>
-        La Maison des Artistes : c’est un régime très proche de celui des auto
-        entrepreneurs (mais antérieur) réservé aux artistes auteurs,
-        plasticiens, graphistes… Les charges sont légères, l’administratif léger
-        (mais y en a toujours trop à mon goût). Mon numéro d’ordre est L987679
-        et mon numéro SIREN 488 238 817.
-      </li>
-      <li>
-        Être humain : l’argent n’est pas une fin en soi, aussi, si vous avez un
-        projet éthique particulièrement emballant, ou simplement peu de moyens
-        financiers mais de quoi donner le change, je suis favorable à l’échange
-        de services et au paiement en nature. N’hésitez pas à me contacter pour
-        en discuter.
-      </li>
-    </ul>
-  </article>
+<article class="main-dual__side--text">
+
+  <h2 class="h2">Parcours professionnel</h2>
+
+  <p>Originaire de Toulouse, j'ai exercé une activité d'illustrateur puis acquis mon premier ordinateur en 2006. J'ai suivi une formation à la suite Adobe exercé comme graphiste freelance. Mon aventure a vraiment commencé à Paris en 2010 : initialement orienté vers le web design, ma curiosité naturelle m'a conduit à collaborer étroitement avec des développeurs talentueux. C'est ainsi que j'ai commencé à acquérir des compétences en développement.</p>
+
+  <p>Tout apprendre en autodidacte m'a satisfait un temps, mais je voulais valider et consolider mes compétences, c'est pour cela qu'en 2018 je suis une formation diplômante auprès d'OpenClassrooms sur la langage Python. Juste retour des choses car, comme beaucoup de dévéloppeurs de ma génération, j'ai écrit mes premières lignes de code en suivant les tutos du Site du Zéro. J'ai monté en compétence et compris que j'étais déjà sur la bonne voie en étant en auto-formation permanente : un bon développeur doit tout le temps s'améliorer !</p>
+
+  <h2 class="main-dual__side--title h2">Au-delà des Écrans</h2>
+  <p>Quand je ne suis pas en train de débugger des lignes de code, vous me trouverez probablement avec un carnet de croquis en main, ou peut être en train de cagoler un toutou ou un matou, à la cuisine, cuisinant un bon petit plat, à faire du sport (justifiant le petit plat) , ou... derrière un autre écran, plongé dans le <em>flow</em> d'un jeu vidéo.</p>
+
+  <h2 class="main-dual__side--title h2">Engagements et convictions</h2>
+
+  <p>Je suis partisan du logiciel libre et open-source, tous mes choix techniques vont dans ce sens. Suivant cette philosophie de liberté et de partage, je tiens à former et à rendre automone mes clients.</p>
+
+  <p>Au-delà du numérique, je nourris un intérêt profond pour les enjeux écologiques. Cette sensibilité se reflète dans mes choix techniques et dans la manière dont j'aborde les projets. Si vous partagez cette préoccupation, vous trouverez en moi un allié engagé.</p>
+
+</article>
 </main>

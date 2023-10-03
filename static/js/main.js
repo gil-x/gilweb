@@ -13,7 +13,10 @@ const toggleMobileMenu = () => {
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("head__menu__icon")) {
     toggleMobileMenu();
-  } else if (event.target.classList.contains("with-child")) {
+  } else if (
+    event.target.classList.contains("with-child") &&
+    mainMenu.classList.contains("visible")
+  ) {
     event.preventDefault();
     submenu.classList.toggle("visible");
   }
