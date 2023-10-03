@@ -19,7 +19,7 @@
 .services {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 60px;
 }
 
 .service {
@@ -58,6 +58,7 @@
 
 @media (min-width: $bp-mobile) {
   .section {
+    // margin: 20px 0 0 0;
     &__title.h2 {
       padding: 40px 0 10px;
       grid-column-start: 1;
@@ -70,7 +71,7 @@
   .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px 0 0 0;
+    margin: 60px 0;
 
     &__title {
       grid-column-start: 1;
@@ -134,9 +135,9 @@
     }
   }
 
-  .service {
-    padding: 20px;
-  }
+  // .service {
+  //   padding: 20px;
+  // }
 
   .references {
     &__container {
@@ -155,15 +156,28 @@
       text-align: center;
     }
   }
+
+  // .section {
+  //   &.services {
+  //     padding: 0 !important;
+  //   }
+  // }
 }
 
 @media (min-width: $bp-hd) {
+  .section {
+    padding: 0;
+  }
+
   .references {
     &__ref {
       max-width: 180px;
       max-height: 80px;
     }
   }
+  // .service {
+  //   padding: 0;
+  // }
 }
 
 // @media (min-width: $bp-fhd) {

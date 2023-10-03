@@ -90,12 +90,16 @@ a {
   background: var(--black);
   text-align: center;
   font-size: var(--font-small);
-  .p {
-    line-height: 1;
 
-    .a {
-      text-decoration: underline;
+  .icon {
+    &::before {
+      font-size: var(--font-root);
     }
+    margin: 0 5px;
+  }
+
+  .a {
+    text-decoration: underline;
   }
 }
 

@@ -88,8 +88,8 @@
       </li>
       <li class="li">
         <a
-          class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% endif %}"
-          href="/blog"
+          class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% elif page.extra.menu is defined and page.extra.menu == 'blog' %} {% endif %}"
+          href="{{ get_url(path='@/blog/_index.md', lang=lang) }}"
           >Blog</a
         >
       </li>
