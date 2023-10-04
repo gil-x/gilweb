@@ -1,27 +1,30 @@
 +++
-title = "Webmaster"
+title = "Webmaster ultra polyvalent"
 template = "page.html"
 
 [extra]
 menu = "services"
 +++
 
-À Propos de Ma Polyvalence Technique :
+## C'est qui le webmaster ?
 
-Je suis [Votre Nom], un webmaster chevronné qui ne recule devant aucune technologie. Doté de compétences de codage étendues, je suis capable de prendre en main n'importe quelle plateforme ou langage pour donner vie à vos idées digitales.
+Un webmaster c’est comme le concierge d’un site internet : il doit être au courant de ce qui s’y passe, savoir comment ça fonctionne et veiller à ce que tout reste propre.
 
-## Maîtrise de la Langue et de l'Orthographe :
+Un webmaster s’occupe au quotidien de mettre en ligne les contenus, ajouter des fonctionnalités, soigner l’apparence et la bonne santé du site modérer les commentaires, corriger les bugs éventuels.
 
-La qualité de la communication est la clé du succès en ligne. En tant que perfectionniste de la langue française et de l'orthographe, je m'assure que chaque mot, chaque phrase sur votre site web est impeccable. La clarté et la précision sont au cœur de ma démarche, garantissant une expérience utilisateur optimale.
+Sauf grosses boutiques ou médias maintream, l’entretien d’un site n’est pas une activité à plein temps, c’est pour cela qu’un webmaster freelance est bien plus rentable. Un freelance peut concentrer ses heures de travail au moment où c’est vraiment nécessaire : une grosse quantité de contenus à publier, un bug, un événements à couvrir…
 
-## Compétences Graphiques Étendues :
+## Pourquoi me choisir ?
 
-En tant que graphiste, je ne m'arrête pas au code. Je peux créer des contenus visuels accrocheurs qui captivent votre audience. Que ce soit la conception de visuels originaux ou la retouche d'éléments existants, je façonne l'esthétique de votre site pour qu'elle soit à la hauteur de vos ambitions.
+À la fois développeur et graphiste, je suis particulièrement utile comme webmaster, car je peux prendre en charge les tâches les plus simples comme les plus complexes de l’administration d’un site web, mais aussi me montrer créatif sur les questions graphiques.
 
-## Votre Site, Ma Responsabilité :
+J’ai plus de 5 ans d’expérience dans la profession, notamment dans le cadre d’une très longue mission auprès de l’Institut Curie, doté d’une constellation de sites thématiques.
 
-Que vous ayez besoin d'une refonte complète de votre site, de l'intégration de nouvelles fonctionnalités, ou simplement de l'optimisation de votre présence en ligne, je suis prêt à transformer vos idées en réalité digitale. Chaque ligne de code, chaque pixel, est travaillé avec soin et dévouement.
+Quelques exemples de travaux que vous pourriez me déléguer :
 
-Explorez la puissance d'une présence en ligne bien orchestrée avec [Votre Nom]. Prêt à faire de votre site un véritable atout digital ?
+- publications de contenus, retouche d’images : toutes ces petites opérations très simples mais qui, mises bout à bout, sont chronophages ;
+- intégration, landing pages, pages événementielles : compétent en HTML et CSS et, sous réserve d’avoir les accès nécessaires, je peux bâtir des pages spéciales au design plus attrayant que les templates habituels ;
+- création et envoi de newsletters : l’envoi d’une newsletter est souvent un exercice difficile pour les équipes de rédaction. Déléguer le côté technique vous permet de vous consacrer aux contenus ;
+- amélioration du SEO : le référencement n’est pas une science exacte, mais il y a un certain nombre de bonnes pratiques à suivre afin d’améliorer le positionnement de votre site dans les moteurs de recherches.
 
-[En savoir plus sur mes services] [Contactez-moi pour discuter de votre projet]
+Pour toute demande d’information ou de devis, je vous invite à [me contacter](@/contact.md), en indiquant l’adresse de votre site internet et si possible les difficultés rencontrées ou évolutions souhaitées.

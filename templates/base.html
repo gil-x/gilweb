@@ -46,6 +46,7 @@
 
     {# tera #}
     <pre data-lang="json" class="tera hidden">{{ __tera_context }}</pre>
+    <script src="{{get_url(path="js/lightbox.js")}}" defer></script>
 
     <script src="{{get_url(path="js/main.js")}}" defer></script>
     {% if section.extra.menu is defined and section.extra.menu == 'home' %} 

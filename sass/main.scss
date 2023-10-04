@@ -4,6 +4,7 @@
 @import "contact";
 @import "about";
 @import "animation";
+@import "lightbox";
 
 @font-face {
   font-family: "Ubuntu";
@@ -74,13 +75,17 @@
   margin: 0;
 }
 
-p {
-  margin: 10px 0;
-}
-
 a {
   text-decoration: none;
   color: inherit;
+}
+
+p {
+  margin: 10px 0;
+
+  a {
+    color: var(--red);
+  }
 }
 
 .footer {

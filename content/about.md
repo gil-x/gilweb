@@ -21,6 +21,7 @@ menu = "about"
   <p>Tout apprendre en autodidacte m'a satisfait un temps, mais je voulais valider et consolider mes compétences, c'est pour cela qu'en 2018 je suis une formation diplômante auprès d'OpenClassrooms sur la langage Python. Juste retour des choses car, comme beaucoup de dévéloppeurs de ma génération, j'ai écrit mes premières lignes de code en suivant les tutos du Site du Zéro. J'ai monté en compétence et compris que j'étais déjà sur la bonne voie en étant en auto-formation permanente : un bon développeur doit tout le temps s'améliorer !</p>
 
   <h2 class="main-dual__side--title h2">Au-delà des Écrans</h2>
+  
   <p>Quand je ne suis pas en train de débugger des lignes de code, vous me trouverez probablement avec un carnet de croquis en main, ou peut être en train de cagoler un toutou ou un matou, à la cuisine, cuisinant un bon petit plat, à faire du sport (justifiant le petit plat) , ou... derrière un autre écran, plongé dans le <em>flow</em> d'un jeu vidéo.</p>
 
   <h2 class="main-dual__side--title h2">Engagements et convictions</h2>

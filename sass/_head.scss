@@ -178,7 +178,7 @@
       margin: 0;
     }
 
-    .ul {
+    .ul:not(.submenu) {
       display: flex;
       gap: 40px;
 
@@ -199,7 +199,7 @@
             position: absolute;
             pointer-events: none;
             opacity: 0;
-            transform: translate(-20px, 0px);
+            transform: translate(-20px, -1px);
 
             .li {
               display: flex;
