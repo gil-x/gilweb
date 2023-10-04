@@ -48,9 +48,6 @@
 
   &__ref {
     width: calc(30%);
-    max-height: 7vh;
-    object-fit: contain;
-    margin: 0 0 20px;
     display: inline-block;
     vertical-align: middle;
   }
@@ -135,10 +132,6 @@
     }
   }
 
-  // .service {
-  //   padding: 20px;
-  // }
-
   .references {
     &__container {
       display: block;
@@ -147,41 +140,21 @@
 
     &__ref {
       width: auto;
-      max-width: 150px;
-      max-height: 60px;
-      margin: 20px;
+      margin: 0 20px;
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1.25);
+      }
     }
 
     &__p {
       text-align: center;
     }
   }
-
-  // .section {
-  //   &.services {
-  //     padding: 0 !important;
-  //   }
-  // }
 }
 
 @media (min-width: $bp-hd) {
   .section {
     padding: 0;
   }
-
-  .references {
-    &__ref {
-      max-width: 180px;
-      max-height: 80px;
-    }
-  }
-  // .service {
-  //   padding: 0;
-  // }
 }
-
-// @media (min-width: $bp-fhd) {
-//   .head {
-//     width: var(--body-max-width);
-//   }
-// }
