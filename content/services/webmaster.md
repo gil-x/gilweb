@@ -28,3 +28,36 @@ Quelques exemples de travaux que vous pourriez me déléguer :
 - amélioration du SEO : le référencement n’est pas une science exacte, mais il y a un certain nombre de bonnes pratiques à suivre afin d’améliorer le positionnement de votre site dans les moteurs de recherches.
 
 Pour toute demande d’information ou de devis, je vous invite à [me contacter](@/contact.md), en indiquant l’adresse de votre site internet et si possible les difficultés rencontrées ou évolutions souhaitées.
+
+## Exemples de travaux réalisés dans le cadre d’un contrat de webmastering
+
+<div class="gallery">
+    <a href="/img/services/webmaster/octobre_rose_banner.jpg">
+    {{ get_img(
+        path='img/services/webmaster/octobre_rose_banner.jpg',
+        title="Institut Curie | Bannière Octobre Rose",
+        alt="Création d'une bannière pour l'événement Octobre Rose.",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+    <a href="/img/services/webmaster/octobre_rose_landing.jpg">
+    {{ get_img(
+        path='img/services/webmaster/octobre_rose_landing.jpg',
+        title="Institut Curie | Template de page",
+        alt="Habillage d'une page d'atterissage pour l'événement Octobre Rose.",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+    <a href="/img/services/webmaster/octobre_rose_ruban.png">
+    {{ get_img(
+        path='img/services/webmaster/octobre_rose_ruban.png',
+        title="Institut Curie | Illustration",
+        alt="Illustration 3D pour l'opération Octobre Rose",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+    <a href="/img/services/webmaster/pictogrammes_curie.jpg">
+    {{ get_img(
+        path='img/services/webmaster/pictogrammes_curie.jpg',
+        title="Institut Curie | Création de pictogrammes",
+        alt="Un exemple de mission graphique intégrée dans une mission de webmaster.",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+</div>

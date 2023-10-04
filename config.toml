@@ -9,3 +9,7 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+images = [
+  { name = "newsletter_template_special.jpg", alt = "alt newsletter_template_special", title = "Titre newsletter_template_special" },
+  { name = "image2.png", alt = "Description personnalisée de l'image 2", title = "Titre personnalisé de l'image 2" },
+]

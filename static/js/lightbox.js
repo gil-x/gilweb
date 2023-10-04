@@ -35,7 +35,7 @@ class Gallery {
     categories.forEach((category) => {
       category.addEventListener("click", (event) => {
         const thumbnails = Array.from(
-          document.querySelectorAll("#gallery > a")
+          document.querySelectorAll(".gallery > a")
         );
 
         if (event.target.classList.contains("cat-all")) {
@@ -76,7 +76,7 @@ class Gallery {
    */
   updateThumbnailsList() {
     this.thumbnails = Array.from(
-      document.querySelectorAll("#gallery a:not(.hidden)")
+      document.querySelectorAll(".gallery a:not(.hidden)")
     );
     return this.thumbnails;
   }

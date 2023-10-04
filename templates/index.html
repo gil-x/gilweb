@@ -1,10 +1,10 @@
 {% extends "base.html" %} {% block content %}
 
-<h1 class="h1">{{section.title|safe}}</h1>
+<h1>{{section.title|safe}}</h1>
 
 <section class="intro">
   <div class="intro__text">
-    <h2 class="h2">Bonjour et bienvenue sur mon site.</h2>
+    <h2>Bonjour et bienvenue sur mon site.</h2>
     <p>
       Vous êtes à la recherche d'un <strong>webmaster freelance</strong>, sur
       <strong>Paris</strong>, polyvalent, avec des compétences de
@@ -32,7 +32,9 @@
       Je peux vous créer de petits programmes sur-mesure&nbsp;: utilitaires, web
       scraping, automatisation de tâches.
     </p>
-    <a class="service--link" href="services/developpement-applications"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/applications.md', lang=lang) }}"
       >Créons quelque chose de neuf</a
     >
   </article>
@@ -42,7 +44,9 @@
     <p class="service--p">
       Transformer une maquette de site web en code est un art que je maîtrise.
     </p>
-    <a class="service--link" href="services/graphiste"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/css.md', lang=lang) }}"
       >En savoir plus sur l'intégration</a
     >
   </article>
@@ -54,7 +58,9 @@
       l'illustration traditionnelle, humoristique ou technique, j'aime et je
       sais faire.
     </p>
-    <a class="service--link" href="services/illustrateur"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/illustration.md', lang=lang) }}"
       >Découvrir mon univers graphique</a
     >
   </article>
@@ -65,7 +71,11 @@
       Créer la meilleure expérience utilisateur pour vos clients, c'est aussi
       mon métier.
     </p>
-    <a class="service--link" href="services/graphiste">Parlons webdesign</a>
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/ux.md', lang=lang) }}"
+      >Parlons webdesign</a
+    >
   </article>
 
   <article class="service">
@@ -74,7 +84,9 @@
       Des données à récupérer, une veille automatisée à mettre en place&nbsp;?
       C'est dans mes cordes.
     </p>
-    <a class="service--link" href="services/webmaster-freelance"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/scraping.md', lang=lang) }}"
       >Allons dévorer le web&nbsp;!</a
     >
   </article>
@@ -85,7 +97,9 @@
       Je peux vous aider et prendre en charge votre site&nbsp;: mettre en ligne
       les contenus, l'améliorer, soigner son référencement.
     </p>
-    <a class="service--link" href="services/webmaster-freelance"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/webmaster.md', lang=lang) }}"
       >J'ai besoin d'un webmaster&nbsp;!</a
     >
   </article>
@@ -96,7 +110,9 @@
       Votre site internet est dépassé, vous créez votre activité ? Je peux
       prendre en charge la refonte de votre site ou sa création de A à Z.
     </p>
-    <a class="service--link" href="services/developpement-web"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/websites.md', lang=lang) }}"
       >Créons un site web…</a
     >
   </article>
@@ -107,7 +123,9 @@
       Je peux vous aider à diagonistiquer votre outil web, ou vous orienter vers
       les meilleurs solutions.
     </p>
-    <a class="service--link" href="services/consultant-web"
+    <a
+      class="service--link"
+      href="{{ get_url(path='@/services/audit.md', lang=lang) }}"
       >Demander un conseil</a
     >
   </article>
@@ -184,7 +202,7 @@
     {{ get_img(path='img/gil_about.webp', alt="Gino Ladowitch", cls="side-img")
     }}
 
-    <h2 class="h2">Je suis un grand timide...</h2>
+    <h2>Je suis un grand timide...</h2>
 
     <p>
       Je n'aime pas trop parler de moi, mais bon… Si on doit travailler
@@ -194,7 +212,7 @@
   </article>
 
   <article class="main-page__article">
-    <h2 class="h2">Petite biographie</h2>
+    <h2>Petite biographie</h2>
     <p>
       Humain âgé de 38 ans et originaire de Toulouse, je suis ce que l’on peut
       appeler un geek : même si je n’ai eu mon premier ordinateur qu'en 2006,
@@ -219,7 +237,7 @@
   </article>
 
   <article class="main-page__article">
-    <h2 class="h2">Statut</h2>
+    <h2>Statut</h2>
     <p>Aujourd’hui je cumule plusieurs statuts :</p>
     <ul>
       <li>

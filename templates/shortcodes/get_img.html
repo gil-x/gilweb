@@ -1,1 +1,6 @@
+{% if width and height %} {% set image = resize_image(path=path, width=width,
+height=height) %}
+<img src="{{ image.url }}" title="{{title}}" alt="{{alt}}" />
+{% else %}
 <img class="{{cls}}" src="{{ get_url(path=path) }}" alt="{{alt}}" />
+{% endif %}

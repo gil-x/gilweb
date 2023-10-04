@@ -29,3 +29,34 @@ Que vous cherchiez à donner vie à une idée spécifique, à ajouter une touche
 Explorez l'univers artistique avec [Votre Nom]. Prêt à faire passer vos idées du papier à la réalité ?
 
 [Découvrir mes illustrations sur Instagram] [Contactez-moi pour discuter de votre projet]
+
+<div class="gallery">
+    <a href="/img/services/illustration/autoportrait.jpg">
+    {{ get_img(
+        path='img/services/illustration/autoportrait.jpg',
+        title="Mon autoportrait",
+        alt="Dessin au stylo bille réalisé il y a de nombreuses années. Heureusement j'ai, depuis, une meilleure estime de moi-même !",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+    <a href="/img/services/illustration/grasset_chroniques_nicolas_1er.jpg">
+    {{ get_img(
+        path='img/services/illustration/grasset_chroniques_nicolas_1er.jpg',
+        title="Tombeau de Nicolas 1er et avènement de François IV",
+        alt="J'ai eu l'honneur de réaliser la couverture du 6e volet de la série de livres de Patrick Rambaud, aux éditions Grasset. (Illustration au feutre, colorisation logicielle)",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+    <a href="/img/services/illustration/ecofolio.png">
+    {{ get_img(
+        path='img/services/illustration/ecofolio.png',
+        title="Ecofolio | L'économie circulaire",
+        alt="Infographie Illustrée pour Ecofolio",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+    <a href="/img/services/illustration/une_lente_agonie.jpg">
+    {{ get_img(
+        path='img/services/illustration/une_lente_agonie.jpg',
+        title="PS, Une lente agonie",
+        alt="Couverture du livre PS, Une lente agonie de Marie-Thérèse Mutin.",
+        cls="main-dual__side--img",
+        width=120, height=120) }}</a>
+</div>

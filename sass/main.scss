@@ -58,19 +58,19 @@
   padding: 0;
 }
 
-.h1,
-.h2,
-.h3 {
+h1,
+h2,
+h3 {
   line-height: 1.25;
 }
 
-.h1 {
+h1 {
   margin: 80px 0 0;
   padding: 60px 20px;
 }
 
-.h2,
-.h3 {
+h2,
+h3 {
   // margin: 40px 0 20px;
   margin: 0;
 }
@@ -112,7 +112,7 @@ p {
 }
 
 @media (min-width: $bp-medium) {
-  .h1 {
+  h1 {
     text-align: center;
   }
 
