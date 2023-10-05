@@ -6,6 +6,8 @@ template = "page.html"
 menu = "contact"
 +++
 
+Laissez-moi un petit mot pour m'expliquer vos attentes, et je répondrai quoi qu'il arrive.
+
 <form class="form" id="myForm">
   <div class="form__side">
     <h2 class="form__title h2">Vous êtes...</h2>

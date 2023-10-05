@@ -1,31 +1,67 @@
 +++
-title = "Mes compétences"
+title = "Ce que je sais faire et avec quoi"
 template = "page.html"
 
 [extra]
 menu = "skills"
 +++
 
-Évolution Continue :
+<strong></strong>
 
-Dans l'univers en perpétuelle évolution du web, je suis fermement convaincu que personne ne peut tout savoir. Les technologies évoluent, de nouvelles tendances émergent, et c'est pourquoi je consacre une part significative de mon temps à apprendre et à m'améliorer continuellement.
+<div class="main-dual--narrow">
 
-Une Veille Permanente :
+<div class="main-dual__left">
 
-Les technologies du web sont souvent libres et communautaires, évoluant rapidement. Je maintiens une veille permanente pour rester informé des dernières avancées, des meilleures pratiques et des nouvelles tendances.
+## Mes compétences
 
-Formation Continue :
+### Langages & outils
 
-En plus de mon parcours autodidacte, j'ai entrepris une formation approfondie en développement Python en 2017. Cette démarche a consolidé mes compétences et m'a assuré une maîtrise totale de ce langage d'avenir, ainsi que des bases solides en programmation.
+- Python
+- HTML
+- CSS / SCSS
+- Javascript
+- TypeScript
+- Golang
+- Code SVG
+- Framework Django
+- CMS Wordpress
 
-Approche Graphique Évolutive :
+### Savoir-faire
 
-Dans le domaine de la production graphique, je crois en la nécessité de garder les yeux et l'esprit ouverts. Observer les tendances, affûter mon sens esthétique, et rester à la pointe des outils informatiques sont essentiels pour créer des designs percutants et modernes.
+- Dessin vectoriel
+- Modélisation 3D
+- Animation
+- SEO
 
-Outils comme Moyens, Idées comme Essence :
+### Logiciels
 
-Je considère les outils informatiques comme des moyens au service de la créativité. Les idées sont le véritable moteur de tout projet, et je m'efforce de les faire émerger dans chaque aspect de mon travail.
+- Godot Engine
+- Inkscape
+- Blender
+- Krita
+- Gimp
 
-Prêt à Répondre aux Nouveaux Défis :
+### Langues
 
-Mon engagement envers l'apprentissage continu et l'amélioration constante reflète ma volonté de relever les défis les plus récents et complexes du monde digital. Explorez mes compétences et découvrez comment je peux apporter une expertise toujours actualisée à vos projets.
+- Anglais
+- Italien
+
+</div>
+
+<div class="main-dual__right">
+
+## En veille permanente
+
+Les technologies du web sont souvent libres et communautaires, et évoluent rapidement. Je maintiens une <strong>veille permanente</strong> pour rester informé des dernières avancées, des meilleures pratiques et des nouvelles tendances.
+
+Il en va de même en design : l'important est de garder les yeux et l'esprit ouverts, suivre les tendances et aiguiser son bon goût. Les outils informatiques ne sont que des outils, ce sont les idées qui font tout.
+
+## Formation encore et toujours
+
+En plus de mon parcours autodidacte, j'ai entrepris une formation approfondie en développement Python en 2018. Cette démarche a consolidé mes compétences et m'a assuré une maîtrise totale de ce langage.
+
+Toutefois le développement est une science vivante qui évolue vite, c'est pour cela que je consacre une part significative de mon temps à apprendre et à m'améliorer continuellement.
+
+</div>
+
+</div>

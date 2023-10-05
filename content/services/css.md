@@ -1,32 +1,43 @@
 +++
-title = "Expert CSS"
+title = "Intégrateur Expert CSS / SCSS"
 template = "page.html"
 
 [extra]
 menu = "services"
 +++
 
-## À propos de moi
+<div class="main-dual--twins">
 
-Je suis [Votre Nom], un intégrateur CSS passionné et minutieux basé à Paris. Avec une expérience riche et huit années d'expertise en intégration web, je suis votre partenaire idéal pour transformer votre design en réalité numérique.
+<div class="main-dual__left">
 
-## Expertise CSS
+## Pourquoi je suis si fort…
 
-Ma spécialité réside dans la création de sites web élégants et performants grâce à une intégration CSS de pointe. Mon code est plus qu'une simple transcription, c'est une symphonie harmonieuse entre la forme et la fonction. Léger, optimisé, et construit avec soin, il offre une expérience utilisateur sans couture et rapide.
+Et si peu modeste ?
+
+Sérieusement… Je fais du CSS depuis que j'ai touché à la conception de sites web, soit voilà plus de 10 ans, j'adore ça et me forme constamment, aussi je me flatte d'avoir une petite **expertise** dans le domaine.
+
+Quand je travaille sur un projet, je mets un point d'honneur à créer un **code propre et lisible**. Et surtout, pas de code inutile !
+
+_CSS Léger, optimisé, construit avec soin, et lisible._ C'est ma devise.
 
 ## SASS et BEM
 
-Maîtrisant les dernières technologies, j'utilise SASS pour apporter une modularité et une maintenabilité accrues à mes projets. Associé à la méthodologie BEM (Block, Element, Modifier), cela garantit une structure CSS robuste et évolutive, facilitant la collaboration et la gestion de code à grande échelle.
+Parce que vous n'avez peut être pas idée à quel point des CSS mal construits et non optimisés peuvent détruire les performances d'un site et rendre sa maintenance compliquée.
+
+Et bien moi si, et c'est la raison pour laquelle j'utilise **SASS** pour apporter une modularité et une maintenabilité accrues à mes projets. Associé à la **méthodologie BEM** (Block, Element, Modifier), cela garantit une structure CSS robuste et évolutive, facilitant la collaboration et la gestion de code à grande échelle.
 
 ## Animations et Interactivité
 
-Mon savoir-faire ne se limite pas à l'esthétique statique. J'apporte une touche dynamique à vos projets avec des animations CSS fluides et des interactions JavaScript subtiles. Que ce soit pour des transitions élégantes, des animations SVG captivantes ou des fonctionnalités interactives, je donne vie à vos idées de manière immersive.
+Mon savoir-faire ne se limite pas à l'esthétique statique. J'apporte une touche dynamique à vos projets avec des **animations CSS fluides** et des interactions **JavaScript** subtiles. Que ce soit pour des transitions élégantes, des captivantes ou des fonctionnalités interactives, je donne vie à vos idées de manière immersive.
 
-## Votre Projet, Ma Passion :
+Je maîtrise également l'utilisation d'**illustrations SVG**, qui peuvent être animées avec simplement du CSS, l'ajout de **JavaScript**, là encore, permet de créer des comportements beaucoup plus riches. Vous avez un bel exemple de **SVG animé** sur ma page d'accueil.
+Notez que je suis aussi graphiste et habile avec le dessin vectoriel, donc je peux créer de zéro de magnigiques **animations SVG**.
 
-Chaque projet est une opportunité de créer quelque chose d'exceptionnel. Avec mon approche axée sur la qualité, je m'engage à vous fournir une intégration CSS qui transcende les attentes. Que vous cherchiez à améliorer l'efficacité de votre site, à optimiser sa performance, ou à lui donner une nouvelle vie visuelle, je suis là pour faire briller votre présence en ligne.
+Si vous avez envie d'un site qui a de l'allure et qui file comme le vent, [Contactez-moi](@/contact.md) car je suis votre partenaire idéal pour transformer votre design en réalité numérique.
 
-Explorez le mariage entre design et fonctionnalité avec [Votre Nom]. Prêt à donner vie à vos idées de manière élégante et performante ?
+</div>
+
+<div class="main-dual__right">
 
 ## Exemples de projets bien menés
 
@@ -49,4 +60,6 @@ Bien sûr pour apprécier, il faut regarder le code, mesurer les performances...
         width=120, height=120) }}</a>
 </div>
 
-Contactez-moi pour discuter de votre projet
+</div>
+
+</div>

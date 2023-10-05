@@ -49,6 +49,10 @@
   }
 }
 
+li:not(.li) {
+  margin: 10px 0;
+}
+
 .no-scroll {
   overflow-y: hidden;
 }
@@ -89,7 +93,7 @@ p {
 }
 
 .footer {
-  //   margin: 50px -10px -20px;
+  margin: 40px 0 0;
   padding: var(--gutter);
   color: var(--white);
   background: var(--black);

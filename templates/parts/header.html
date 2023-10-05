@@ -35,8 +35,8 @@
           <li class="li">
             <a
               class="link"
-              href="{{ get_url(path='@/services/websites.md', lang=lang) }}"
-              >Création de sites internet</a
+              href="{{ get_url(path='@/services/illustration.md', lang=lang) }}"
+              >Illustration</a
             >
           </li>
           <li class="li">
@@ -56,11 +56,10 @@
           <li class="li">
             <a
               class="link"
-              href="{{ get_url(path='@/services/illustration.md', lang=lang) }}"
-              >Illustration</a
+              href="{{ get_url(path='@/services/websites.md', lang=lang) }}"
+              >Création de sites internet</a
             >
           </li>
-
           <li class="li">
             <a
               class="link"
@@ -93,6 +92,7 @@
           >A propos</a
         >
       </li>
+      {#
       <li class="li">
         <a
           class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% elif page.extra.menu is defined and page.extra.menu == 'blog' %} {% endif %}"
@@ -100,6 +100,7 @@
           >Blog</a
         >
       </li>
+      #}
       <li class="li">
         <a
           class="link {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
