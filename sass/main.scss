@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/gil-icons.woff") format("woff");
+  src: url("../fonts/gil-icons.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -32,6 +32,7 @@
 .icon {
   display: inline-block;
   color: var(--black);
+  text-decoration: none;
 
   &::before {
     font-family: "icons";
@@ -44,6 +45,9 @@
   }
   &.linkedin::before {
     content: "3";
+  }
+  &.github::before {
+    content: "G";
   }
   &.menu::before {
     content: "m";

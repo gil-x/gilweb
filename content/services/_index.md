@@ -31,11 +31,9 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
     <p class="service--p">
       Je peux vous créer de programmes sur-mesure&nbsp;: utilitaires, ludiques, automatisation de tâches…
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/applications.md', lang=lang) }}"
-      >Créons quelque chose de neuf</a
-    >
+
+[Créons quelque chose de neuf](@/services/applications.md)
+
   </article>
 
   <article class="service">
@@ -43,11 +41,9 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
     <p class="service--p">
       Avec plus de 10 ans d'expérience dans le domaine, je suis capable d'apporter une réelle plus-value à votre projet.
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/css.md', lang=lang) }}"
-      >En savoir plus sur l'intégration</a
-    >
+
+[En savoir plus sur l'intégration](@/services/css.md)
+
   </article>
 
   <article class="service">
@@ -55,11 +51,9 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
     <p class="service--p">
       Dessin traditionnel, humoristique, vectoriel ou 3D, je m'adapte à vos besoins.
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/illustration.md', lang=lang) }}"
-      >Découvrez mon univers graphique</a
-    >
+
+[Découvrez mon univers graphique](@/services/illustration.md)
+
   </article>
 
   <article class="service">
@@ -68,12 +62,10 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
       Des données à récupérer, une veille automatisée à mettre en place&nbsp;?
       C'est dans mes cordes.
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/scraping.md', lang=lang) }}"
-      >Allons dévorer le web&nbsp;!</a
-    >
-  </article>
+
+[Allons dévorer le web&nbsp;!](@/services/scraping.md)
+
+</article>
 
   <article class="service">
     <h3 class="service--title h3">UX/UI</h3>
@@ -81,12 +73,10 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
       Créer la meilleure expérience utilisateur pour vos clients, c'est aussi
       mon métier.
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/ux.md', lang=lang) }}"
-      >Parlons webdesign</a
-    >
-  </article>
+
+[Parlons webdesign](@/services/ux.md)
+
+</article>
 
   <article class="service">
     <h3 class="service--title h3">Création de site internet</h3>
@@ -94,12 +84,10 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
       Votre site internet est dépassé, vous créez votre activité ? Je peux
       prendre en charge la refonte de votre site ou sa création de A à Z.
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/websites.md', lang=lang) }}"
-      >Créons un site web…</a
-    >
-  </article>
+
+[Créons un site web…](@/services/websites.md)
+
+</article>
 
   <article class="service">
     <h3 class="service--title h3">Webmaster</h3>
@@ -107,12 +95,10 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
       Je peux vous aider et prendre en charge votre site&nbsp;: mettre en ligne
       les contenus, l'améliorer, soigner son référencement (SEO).
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/webmaster.md', lang=lang) }}"
-      >J'ai besoin d'un webmaster&nbsp;!</a
-    >
-  </article>
+
+[J'ai besoin d'un webmaster&nbsp;!](@/services/webmaster.md)
+
+</article>
 
   <article class="service">
     <h3 class="service--title h3">Audit/Conseil</h3>
@@ -120,11 +106,9 @@ N'hésitez pas à [me contacter](@/contact.md) si vous avez des questions.
       Je peux vous aider à diagonistiquer votre outil web, ou vous orienter vers
       les meilleurs solutions.
     </p>
-    <a
-      class="service--link"
-      href="{{ get_url(path='@/services/audit.md', lang=lang) }}"
-      >Demander un conseil</a
-    >
-  </article>
+
+[Demander un conseil](@/services/audit.md)
+
+</article>
 
 </section>

@@ -30,7 +30,9 @@
     font-weight: normal;
   }
 
-  &--link {
+  &--link,
+  & > p a {
+    color: inherit;
     font-weight: bold;
     text-decoration: underline;
   }

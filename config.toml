@@ -1,4 +1,4 @@
-base_url = "https://zola.gil-web.com"
+base_url = "https://gil-web.com"
 compile_sass = true
 build_search_index = true
 default_language = "fr"

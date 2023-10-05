@@ -45,7 +45,7 @@ function submitForm() {
   dialog.classList.remove("problem");
   dialog.innerHTML = "";
 
-  fetch("https://zola.gil-web.com/php/target.php", {
+  fetch("/php/target.php", {
     method: "POST",
     body: formData,
   })
@@ -141,7 +141,7 @@ function submitForm() {
         // dialogText += `=> Il manque un message, cela va être compliqué de comprendre vos attentes !\n`;
       }
       // var para = document.createElement('p');
-      dialog.appendChild(document.createTextNode(dialogText));
+      // dialog.appendChild(document.createTextNode(dialogText));
 
       // alert(data);
     })

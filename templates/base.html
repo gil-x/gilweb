@@ -26,7 +26,7 @@
     {% include "parts/header.html" %} {% block content %} {% endblock %}
 
     <footer class="footer">
-      Copyright ©2023 Gino Ladowitch | Tous droits réservés | <a class="a" href="#" rel="nofollow">Mentions légales</a>
+      Copyright ©2023 Gino Ladowitch | Tous droits réservés | <a class="a" href={{ get_url(path='@/legal.md', lang=lang) }} rel="nofollow">Mentions légales</a>
       <a
       href="https://www.instagram.com/gil_dessine/"
       target="_blank"
@@ -41,11 +41,18 @@
       class="icon linkedin"
       style="color: white"
     ></a>
-    <span>github</span>
+    <a
+      href="https://github.com/gil-x/"
+      target="_blank"
+      aria-label="Go see my work on Github"
+      class="icon github"
+      style="color: white"
+    ></a>
     </footer>
 
-    {# tera #}
+    {# tera
     <pre data-lang="json" class="tera hidden">{{ __tera_context }}</pre>
+    #}
     <script src="{{get_url(path="js/lightbox.js")}}" defer></script>
 
     <script src="{{get_url(path="js/main.js")}}" defer></script>
