@@ -38,8 +38,8 @@ menu = "contact"
     <h2 class="form__title h2">Objet de votre message</h2>
     <ul class="form__list">
       <li class="form__list--item">
-        <input type="checkbox" name="devis" id="devis" />&nbsp;<label
-          for="devis"
+        <input type="checkbox" name="estimate" id="estimate" />&nbsp;<label
+          for="estimate"
           >Demande de devis</label
         >
       </li>

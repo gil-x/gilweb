@@ -14,10 +14,9 @@ Créateur / responsable publication / webmaster : Gino Ladowitch
 
 Hébergeur : 1&1 Internet SARL - 7, place de la garde - SARL au capital de 100 000 EUR - BP 70109 57201 Sarreguemines Cedex
 
-Gino Ladowitch est Inscrit à la Maison des artistes. Numéro d'ordre L987679 Numéro SIREN 488 238 817.
+Gino Ladowitch est Inscrit à la Maison des artistes. Numéro d'ordre L987679 Numéro SIREN : 488 238 817.
 
-Gino Ladowitch fait partie de Coopaname, société coopérative ouvrière de production anonyme à capital variable
-RCS Paris : 448 762 526 - APE : 7022Z - N° Intracom : FR49 448 762 526 - 3/7 rue Albert Marquet - 75020 Paris
+Gino Ladowitch est affilié en tant que Auto-entrepreneur à l'URSSAF. Numéro Siret : 48823881700040.
 
 Les informations contenues dans le site sont fournies pour la seule information générale des visiteurs.
 

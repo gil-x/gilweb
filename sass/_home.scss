@@ -142,7 +142,8 @@
     }
 
     &__ref {
-      width: auto;
+      width: 120px;
+      height: 120px;
       margin: 0 20px;
       transition: transform 0.5s;
       &:hover {

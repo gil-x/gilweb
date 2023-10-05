@@ -62,7 +62,7 @@
     &--img {
       filter: brightness(0);
       height: 36px;
-      width: auto;
+      width: 101px;
     }
   }
 }
@@ -141,6 +141,14 @@
 }
 
 @media (min-width: $bp-mobile) {
+  .head {
+    &__logo {
+      &--img {
+        width: 118px;
+        height: 42px;
+      }
+    }
+  }
 }
 
 @media (min-width: $bp-medium) {
@@ -156,12 +164,14 @@
       height: 100%;
       background: var(--black);
       padding: 0 0 0 40px;
-      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-      animation: reveal-logo 1s 1 cubic-bezier(0.89, 0.47, 0.58, 0.96) forwards;
+      // clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      // animation: reveal-logo 1s 1 cubic-bezier(0.89, 0.47, 0.58, 0.96) forwards;
+      clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
 
       &--img {
         filter: none;
-        height: 50%;
+        width: 147px;
+        height: 52px;
       }
     }
   }

@@ -163,6 +163,7 @@
     margin: 0 -55% -1% 0;
     transform: translateX(50vw);
     transition: transform 1.5s;
+    transition-delay: 3s;
 
     &.visible {
       transform: translateX(0);
