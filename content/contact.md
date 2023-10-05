@@ -6,30 +6,32 @@ template = "page.html"
 menu = "contact"
 +++
 
-Laissez-moi un petit mot pour m'expliquer vos attentes, et je répondrai quoi qu'il arrive.
+<p class="centered">Laissez-moi un petit mot pour m'expliquer vos attentes, et je répondrai quoi qu'il arrive.</p>
 
-<form class="form" id="myForm">
+<div class="dialog"></div>
+
+<form class="form" id="myForm" autocomplete="on">
   <div class="form__side">
-    <h2 class="form__title h2">Vous êtes...</h2>
+    <h2 class="form__title h2">Vous êtes…</h2>
     <p class="form__field">
       <label class="form__field--label" for="firstname">Prénom :</label>
-      <input class="form__field--input" type="text" name="firstname" value="" />
+      <input class="form__field--input" id="firstname" type="text" name="firstname" value=""/>
     </p>
     <p class="form__field">
       <label class="form__field--label" for="lastname">Nom :</label>
-      <input class="form__field--input" type="text" name="lastname" value="" />
+      <input class="form__field--input" id="lastname" type="text" name="lastname" value="" />
     </p>
     <p class="form__field">
       <label class="form__field--label" for="company">Société :</label>
-      <input class="form__field--input" type="text" name="company" value="" />
+      <input class="form__field--input" id="company" type="text" name="company" value="" autocomplete="off" />
     </p>
     <p class="form__field">
       <label class="form__field--label" for="website">Site web actuel :</label>
-      <input class="form__field--input" type="text" name="website" value="" />
+      <input class="form__field--input" id="website" type="text" name="website" value="" />
     </p>
     <p class="form__field">
       <label class="form__field--label" for="email">Email* :</label>
-      <input class="form__field--input" type="email" name="email" value="" />
+      <input class="form__field--input" id="email" type="email" name="email" value="" autocomplete="on"/>
     </p>
   </div>
   <div class="form__side">
@@ -42,11 +44,10 @@ Laissez-moi un petit mot pour m'expliquer vos attentes, et je répondrai quoi qu
         >
       </li>
       <li class="form__list--item">
-        <input
-          type="checkbox"
-          name="collaboration"
-          id="collaboration"
-        />&nbsp;<label for="collaboration">Proposition de collaboration</label>
+        <input type="checkbox" name="collaboration" id="collaboration" />&nbsp;<label
+          for="collaboration"
+          >Proposition de collaboration</label
+        >
       </li>
       <li class="form__list--item">
         <input type="checkbox" name="copyright" id="copyright" />&nbsp;<label
@@ -61,23 +62,23 @@ Laissez-moi un petit mot pour m'expliquer vos attentes, et je répondrai quoi qu
         >
       </li>
       <li class="form__list--item">
-        <input type="checkbox" name="other" id="autre" />&nbsp;<label
+        <input type="checkbox" name="other" id="other" />&nbsp;<label
           for="other"
           >Autre</label
         >
       </li>
       <li class="form__list--item">
-        <input type="checkbox" name="personnal" id="autre" />&nbsp;<label
+        <input type="checkbox" name="personnal" id="personnal" />&nbsp;<label
           for="personnal"
           >Personnel</label
         >
       </li>
     </ul>
     <h3 class="h3">Message</h3>
-    <textarea class="form__textarea" name="message" rows="10" cols="40"></textarea>
+    <textarea id="message" class="form__textarea" name="message" rows="10" cols="40"></textarea>
   </div>
 
   <div class="form__send">
-    <button class="form__send--submit" id="submit" onclick="submitForm()">Envoyer</button>
+    <button class="form__send--submit" type="button" id="submit" onclick="submitForm()">Envoyer</button>
   </div>
 </form>

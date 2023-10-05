@@ -10,6 +10,7 @@
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
 }
 
@@ -80,15 +81,19 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
 p {
   margin: 10px 0;
 
+  &.centered {
+    text-align: center;
+  }
+
   a {
     color: var(--red);
+    text-decoration: underline;
   }
 }
 

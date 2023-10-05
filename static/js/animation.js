@@ -56,11 +56,6 @@ const animationSheduler = () => {
   setTimeout(animationSheduler, pauseTime);
 };
 
-animation.addEventListener("touchstart", (e) => {
-  e.preventDefault;
-  console.log("hey");
-});
-
 animationSheduler();
 
 window.addEventListener("load", (event) => {

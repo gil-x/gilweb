@@ -41,7 +41,7 @@ Si vous avez envie d'un site qui a de l'allure et qui file comme le vent, [Conta
 
 ## Exemples de projets bien menés
 
-Bien sûr pour apprécier, il faut regarder le code, mesurer les performances...
+Bien sûr pour apprécier, il faut regarder le code, mesurer les performances…
 
 <div class="gallery">
     <a href="/img/services/css/quelbonplan.png">

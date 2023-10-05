@@ -15,10 +15,15 @@
 }
 
 @keyframes li-appears {
-  from {
+  0% {
+    opacity: 0;
     transform: translateX(100vw);
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -199,7 +204,7 @@
             position: absolute;
             pointer-events: none;
             opacity: 0;
-            transform: translate(-20px, -1px);
+            transform: translate(-20px, 0);
 
             .li {
               display: flex;
@@ -207,6 +212,7 @@
               padding: 0 20px;
               background: var(--yellow);
               box-shadow: 20px 3px 1px rgba(0, 0, 0, 0.25);
+              opacity: 0;
 
               &:hover {
                 background: var(--black);
@@ -227,7 +233,6 @@
             & > .li {
               transform: translateX(100vw);
             }
-
             & > .li:nth-child(1) {
               animation: li-appears 0.25s 1 0.1s forwards;
             }

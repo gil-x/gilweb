@@ -105,6 +105,7 @@
   .intro {
     display: flex;
     align-items: center;
+    width: var(--body-max-width);
     margin: 0 0 60px;
     padding: 0;
     height: 350px;
@@ -118,7 +119,7 @@
   }
 
   .section {
-    width: var(--max-body-width);
+    width: var(--body-max-width);
     &__title {
       grid-column-end: 4;
     }

@@ -22,7 +22,7 @@ Tout apprendre en autodidacte m'a satisfait un temps, mais je voulais valider et
 
 <h2 class="main-dual__side--title h2">Au-delà des Écrans</h2>
   
-Quand je ne suis pas en train de débugger des lignes de code, vous me trouverez probablement avec un carnet de croquis en main, ou peut être en train de cagoler un toutou ou un matou, à la cuisine, cuisinant un bon petit plat, à faire du sport (justifiant le petit plat) , ou... derrière un autre écran, plongé dans le <em>flow</em> d'un jeu vidéo.
+Quand je ne suis pas en train de débugger des lignes de code, vous me trouverez probablement avec un carnet de croquis en main, ou peut être en train de cagoler un toutou ou un matou, à la cuisine, cuisinant un bon petit plat, à faire du sport (justifiant le petit plat) , ou… derrière un autre écran, plongé dans le <em>flow</em> d'un jeu vidéo.
 
 <h2 class="main-dual__side--title h2">Engagements et convictions</h2>
 
