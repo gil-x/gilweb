@@ -67,22 +67,37 @@ if ($errorForm > 0) {
 }
 
 $subject = [];
-$subject[] = setIfExist($_POST["estimate"], "Demande de devis");
-$subject[] = setIfExist($_POST["collaboration"], "Collaboration");
-$subject[] = setIfExist($_POST["copyright"], "Droits d'auteur");
-$subject[] = setIfExist($_POST["question"], "Question");
-$subject[] = setIfExist($_POST["other"], "Autre");
-$subject[] = setIfExist($_POST["personnal"], "SPAM");
-$subject = "Nouveau message " . implode(" | ", array_filter($subject, function($v){ return empty($v); }));
+if ($_POST["estimate"]) {
+    array_push($subject, "Demande de devis");
+}
+if ($_POST["collaboration"]) {
+    array_push($subject, "Collaboration");
+}
+if ($_POST["copyright"]) {
+    array_push($subject, "Droits d'auteur");
+}
+if ($_POST["question"]) {
+    array_push($subject, "Question");
+}
+if ($_POST["other"]) {
+    array_push($subject, "Autre");
+}
+if ($_POST["personnal"]) {
+    $subject = [];
+    array_push($subject, "SPAM");
+}
+
+$subject = "Nouveau message " . implode(" | ", $subject);
 
 $body = [];
-$body[] = $firstname;
-$body[] = $lastname;
-$body[] = $company;
-$body[] = $website;
-$body[] = $email;
-$body[] = $message;
-$body = implode("\n\n", array_filter($body, function($v){ return empty($v); }));
+array_push($body, $firstname);
+array_push($body, $lastname);
+array_push($body, $company);
+array_push($body, $website);
+array_push($body, $email);
+array_push($body, $message);
+
+$body = implode("\n", $body);
 
 if (mail($EMAIL_TO, $subject, $body, 'From: ' . $EMAIL_FROM) === false) {
     echo('Error Unknown');
