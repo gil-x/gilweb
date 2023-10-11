@@ -1,4 +1,4 @@
-console.log("Animation script loaded");
+// console.log("Animation script loaded");
 
 const pupil = document.getElementById("pupil");
 const eyeLiderTop = document.getElementById("eyelider-top");

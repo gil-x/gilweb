@@ -163,7 +163,6 @@
     margin: 0 -55% -1% 0;
     transform: translateX(50vw);
     transition: transform 1.5s;
-    transition-delay: 3s;
 
     &.visible {
       transform: translateX(0);
@@ -226,7 +225,7 @@
   .intro__animation {
     // height: 350%;
     #svg {
-      margin: 0 -40% -1% 0;
+      margin: 0 -35% -1% 0;
     }
   }
 }
@@ -235,24 +234,19 @@
   .intro__animation {
     position: static;
     width: auto;
-    height: 200%;
+    height: 100%;
     opacity: 1;
     z-index: auto;
 
     #svg {
-      margin: 0 -60% -1% 0;
+      height: 120%;
+      margin: 0 -10% -1% 0;
     }
   }
 }
 
-@media (min-width: $bp-hd) {
-  .intro__animation {
-    height: 150%;
-  }
-}
+// @media (min-width: $bp-hd) {
+// }
 
 // @media (min-width: $bp-fhd) {
-//   .intro__animation {
-//     height: 140%;
-//   }
 // }
