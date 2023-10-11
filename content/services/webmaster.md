@@ -1,9 +1,12 @@
 +++
 title = "Webmaster ultra polyvalent"
 template = "page.html"
+slug = "webmaster"
 
 [extra]
 menu = "services"
+meta_title = "Webmaster freelance sur Paris | Graphiste & illustrateur"
+meta_description = "Webmaster & graphiste freelance sur Paris. Je mets à votre service toute mon expérience pour vous aider dans votre communication digitale."
 +++
 
 <div class="main-dual--twins">

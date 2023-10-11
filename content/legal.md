@@ -1,9 +1,12 @@
 +++
 title = "Mentions légales"
 template = "page.html"
+slug = "mentions-legales"
 
 [extra]
 menu = "legal"
+meta_title = "Mentions légales"
+meta_description = "Gil-web.com | Mentions légales."
 +++
 
 ## Information éditeur

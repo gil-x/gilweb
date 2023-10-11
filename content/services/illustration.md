@@ -1,9 +1,12 @@
 +++
 title = "Illustration"
 template = "page.html"
+slug = "illustration"
 
 [extra]
 menu = "services"
+meta_title = "Illustrateur freelance | Dessins de presse | Peinture à l'huile"
+meta_description = "Je mets mes humbles talents à votre service pour des dessins humoristiques, infographies vectorielles, 3D et même animation. Contactez-moi !"
 +++
 
 <div class="main-dual--twins">

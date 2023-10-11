@@ -1,9 +1,12 @@
 +++
 title = "Conseil et audit de site internet"
 template = "page.html"
+slug = "consultant-web"
 
 [extra]
 menu = "services"
+meta_title = "Consultant web freelance sur Paris et Bretagne, stratégie numérique"
+meta_description = "Avec plus de 10 ans d'expérience dans le web, je remets d'équerre votre stratégie web !"
 +++
 
 <div class="main-dual--solo">

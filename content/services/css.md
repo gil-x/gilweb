@@ -1,9 +1,12 @@
 +++
 title = "Intégrateur Expert CSS / SCSS"
 template = "page.html"
+slug = "expert-css"
 
 [extra]
 menu = "services"
+meta_title = "Développeur web front-end, expert CSS, SCSS, éco-conception"
+meta_description = "Besoin d'un expert CSS pour optimiser ou construire un site, éco-conçu et rapide ? Je peux vous aider !"
 +++
 
 <div class="main-dual--twins">

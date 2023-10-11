@@ -1,9 +1,12 @@
 +++
 title = "Développement d'applications"
 template = "page.html"
+slug = "developpement-applications"
 
 [extra]
 menu = "services"
+meta_title = "Développeur d'applications Python, Golang, Godot freelance"
+meta_description = "Développement d'applications sur-mesure en Python : petits programmes utilitaires, crawlers, automatisation de tâches."
 +++
 
 <div class="main-dual--reverse">

@@ -1,9 +1,12 @@
 +++
 title = "Contactez-moi"
 template = "page.html"
+slug = "contact"
 
 [extra]
 menu = "contact"
+meta_title = "Gil-web.com | Formulaire de contact"
+meta_description = "Gil-web.com - Gino Ladowitch | Formulaire de contact | Demande de devis | Droits d'auteur."
 +++
 
 <p class="centered">Laissez-moi un petit mot pour m'expliquer vos attentes, et je répondrai quoi qu'il arrive.</p>

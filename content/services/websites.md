@@ -1,9 +1,12 @@
 +++
 title = "Création de sites internet"
 template = "page.html"
+slug = "developpement-web"
 
 [extra]
 menu = "services"
+meta_title = "Développeur web freelance sur Paris | Django, CMS Wordpress, Zola"
+meta_description = "Création ou refonte de sites internet sur-mesure, optimisés SEO et respectant les normes W3C. Technos : Django, Wordpress, Zola..."
 +++
 
 <div class="main-dual--reverse">

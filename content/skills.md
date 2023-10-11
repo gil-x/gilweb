@@ -1,9 +1,12 @@
 +++
 title = "Ce que je sais faire et avec quoi"
 template = "page.html"
+slug = "competences"
 
 [extra]
 menu = "skills"
+meta_title = "Gino Ladowitch | CV | Compétences web et logiciels graphiques"
+meta_description = "Une liste non exhaustive de mes compétences en technologies web et logiciels graphiques…"
 +++
 
 <strong></strong>

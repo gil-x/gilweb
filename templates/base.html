@@ -22,8 +22,14 @@
 
 
   <title>
-    Développeur web expert CSS, eco-conception, Python, freelance Paris
-    Bretagne
+    {% if section.extra.meta_title is defined %}
+    {{ section.extra.meta_title }}
+    {% elif page.extra.meta_title is defined %}
+    {{ page.extra.meta_title }}
+    {% else %}
+    Développeur web expert CSS, eco-conception, Python, freelance Paris Bretagne
+    {% endif %}
+
   </title>
   <meta name="description"
     content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure." />

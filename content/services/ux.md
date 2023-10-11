@@ -1,9 +1,12 @@
 +++
 title = "UX / UI"
 template = "page.html"
+slug = "ux-ui"
 
 [extra]
 menu = "services"
+meta_title = "Graphiste freelance sur Paris : Infographie, Webdesign, UX, UI"
+meta_description = "Graphiste freelance sur Paris, spécialisé en illustration et webdesign UX & UI, et avec un petit penchant pour l'animation."
 +++
 
 <div class="main-dual--twins">

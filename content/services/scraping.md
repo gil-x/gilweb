@@ -1,9 +1,12 @@
 +++
 title = "Scraping de données"
 template = "page.html"
+slug = "web-scraping"
 
 [extra]
 menu = "services"
+meta_title = "Outils de scraping web, récupération et traitement de données, automatisation."
+meta_description = "Je sais construire des scripts pour récupérer les données dont vous avez besoin sur le web, et je peux également leur appliquer des traitements et analyses."
 +++
 
 <div class="main-dual--solo">

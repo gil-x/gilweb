@@ -1,9 +1,12 @@
 +++
 title = "A propos de moi"
 template = "page.html"
+slug = "a-propos"
 
 [extra]
 menu = "about"
+meta_title = "Gino Ladowitch | À propos | Biographie | Statut"
+meta_description = "Je suis Gino Ladowitch et je travaille en freelance dans le web mais suis également artiste, game designer et autres…"
 +++
 
 <!-- <aside class="aside">
