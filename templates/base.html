@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- prettier-ignore -->
-    <link rel="stylesheet" href={{get_url(path="main.css")}} />
-    {#
-    {% if page.extra.menu is defined and page.extra.menu == 'contact' %} 
-    <link rel="stylesheet" href={{get_url(path="contact.css")}} /> {% endif %}
-    #}
-    <title>
-      Développeur web expert CSS, eco-conception, Python, freelance Paris
-      Bretagne
-    </title>
-    <meta
-      name="description"
-      content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure."
-    />
-    <meta
-      name="description"
-      content="Je mets à votre disposition plus de 10 ans d'expérience dans la conception de sites web"
-    />
-  </head>
-  <body class="body">
-    {% include "parts/header.html" %} {% block content %} {% endblock %}
 
-    <footer class="footer">
-      Copyright ©2023 Gino Ladowitch | Tous droits réservés | <a class="a" href={{ get_url(path='@/legal.md', lang=lang) }} rel="nofollow">Mentions légales</a>
-      <a
-      href="https://www.instagram.com/gil_dessine/"
-      target="_blank"
-      aria-label="Go see my Instagram account"
-      class="icon instagram"
-      style="color: white"
-    ></a>
-    <a
-      href="https://www.linkedin.com/in/gino-ladowitch/"
-      target="_blank"
-      aria-label="Let's keep in touch on LinkedIn"
-      class="icon linkedin"
-      style="color: white"
-    ></a>
-    <a
-      href="https://github.com/gil-x/"
-      target="_blank"
-      aria-label="Go see my work on Github"
-      class="icon github"
-      style="color: white"
-    ></a>
-    </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- prettier-ignore -->
+  <link rel="stylesheet" href="{{get_url(path='main.css' )}}" />
 
-    {# tera
-    <pre data-lang="json" class="tera hidden">{{ __tera_context }}</pre>
-    #}
-    <script src="{{get_url(path="js/lightbox.js")}}" defer></script>
+  {% if page.extra.menu is defined and page.extra.menu == 'contact' %}
+  <link rel="stylesheet" href="{{get_url(path='contact.css' )}}" /> {% endif %}
 
-    <script src="{{get_url(path="js/main.js")}}" defer></script>
-    {% if section.extra.menu is defined and section.extra.menu == 'home' %} 
-    <script src="{{get_url(path="js/animation.js")}}" defer></script>
-    {% endif %}
-  </body>
+  {% if section.extra.menu is defined and section.extra.menu == 'home' %}
+  <link rel="stylesheet" href="{{get_url(path='animation.css')}}" /> {% endif %}
+
+  {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
+  page.extra.menu == 'services'%}
+  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}" /> {% endif %}
+
+
+  <title>
+    Développeur web expert CSS, eco-conception, Python, freelance Paris
+    Bretagne
+  </title>
+  <meta name="description"
+    content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure." />
+  <meta name="description"
+    content="Je mets à votre disposition plus de 10 ans d'expérience dans la conception de sites web" />
+</head>
+
+<body class="body">
+  {% include "parts/header.html" %} {% block content %} {% endblock %}
+
+  <footer class="footer">
+    Copyright ©2023 Gino Ladowitch | Tous droits réservés | <a class="a" href={{ get_url(path='@/legal.md' , lang=lang)
+      }} rel="nofollow">Mentions légales</a>
+    <a href="https://www.instagram.com/gil_dessine/" target="_blank" aria-label="Go see my Instagram account"
+      class="icon instagram" style="color: white"></a>
+    <a href="https://www.linkedin.com/in/gino-ladowitch/" target="_blank" aria-label="Let's keep in touch on LinkedIn"
+      class="icon linkedin" style="color: white"></a>
+    <a href="https://github.com/gil-x/" target="_blank" aria-label="Go see my work on Github" class="icon github"
+      style="color: white"></a>
+  </footer>
+
+  {# tera
+  <pre data-lang="json" class="tera hidden">{{ __tera_context }}</pre>
+  #}
+
+
+  <script src="{{get_url(path='js/main.js')}}" defer></script>
+
+
+  {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
+  page.extra.menu == 'services' %}
+  <script src="{{get_url(path='js/lightbox.js')}}" defer></script>
+  {% endif %}
+
+
+  {% if section.extra.menu is defined and section.extra.menu == 'home' %}
+  <script src="{{get_url(path='js/animation.js')}}" defer></script>
+  {% endif %}
+</body>
+
 </html>
