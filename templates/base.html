@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- prettier-ignore -->
+
   <link rel="stylesheet" href="{{get_url(path='main.css' )}}" />
 
   {% if page.extra.menu is defined and page.extra.menu == 'contact' %}
@@ -14,8 +14,11 @@
   <link rel="stylesheet" href="{{get_url(path='animation.css')}}" /> {% endif %}
 
   {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
-  page.extra.menu == 'services'%}
-  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}" /> {% endif %}
+  page.extra.menu == 'services' or page.extra.menu is defined and
+  page.extra.menu == 'about' or page.extra.menu is defined and
+  page.extra.menu == 'skills'%}
+  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}" />
+  <link rel="stylesheet" href="{{get_url(path='page.css')}}" /> {% endif %}
 
 
   <title>
