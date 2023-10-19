@@ -1,14 +1,25 @@
 {% extends "base.html" %} {% block content %} {% if page.title is defined %}
-<h1>{{ page.title }}</h1>
+<h1 class="blog-title">{{ page.title }}</h1>
 {% elif section.title is defined %}
-<h1>{{ section.title }}</h1>
+<h1 class="blog-title">{{ section.title }}</h1>
 {% endif %} {% if page.content is defined %} {{ page.content | safe }} {% elif
 section.content is defined %} {{ section.content | safe }} {% endif %}
 
-<ul>
+<ul class="posts">
   {% for page in paginator.pages %}
+  <a class="post" href="/blog/{{ page.slug | safe }}">
+    <li class="post__a">
+      <h2>{{ page.title }}</h2>
 
-  <li><a href="/blog/{{ page.slug | safe }}">{{ page.title }}</a></li>
+      {% if page.extra.summary_img is defined %}
+      <img src="/blog/{{ page.slug | safe }}/{{ page.extra.summary_img}}" alt="" class="post__a--thumbnail">
+      {% endif %}
+      {% if page.extra.summary is defined %}
+      <p>{{ page.extra.summary | safe}}</p>
+      {% endif %}
+      <span class="post__read">Lire</span>
+    </li>
+  </a>
 
   {% endfor %}
 </ul>

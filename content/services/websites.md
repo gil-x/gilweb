@@ -28,8 +28,8 @@ Cet audit, confronté à la liste de vos cibles sur internet, mettra en relief l
 
 ## Un site internet, pourquoi faire ?
 
-La première question que j'aime poser est :<br>
-<em>"Avez-vous réellement besoin d'un site internet (maintenant) ?"</em>.<br>
+La première question que j'aime poser est :  
+<em>"Avez-vous réellement besoin d'un site internet (maintenant) ?"</em>.  
 Pourquoi ? Parce que :
 
 - c'est un budget
@@ -48,7 +48,7 @@ Un plan du site sous la forme d’un mindmap et des diagrammes de cas d’usages
 
 Il convient de choisir la technologie la plus adaptée à votre projet. On ne chasse les moustiques avec missiles Tomahawk<sup>TM</sup> n'est-ce pas ? Je ne travaille qu’avec des solutions **open source** (et que l’on travaille ensemble ou pas, je vous conseille vivement de fuir toute solution propriétaire !). Voici les différentes technologies que je maîtrise :
 
-- **Wordpress :** un CMS initialiement conçu comme moteur de blog, c'est aujourd'hui une solution très versatile et extrêmement répandue. De nombreux utilisateurs sont familiés avec son administration et c'est une technologie très demandée. Personnellement maîtrise parfaitement la création de **thème sur-mesure**, **optimisé SEO** et très rapide. Je réalise des sites Wordpress uniquement dans le périmètre _vitrine + blog_.<br>
+- **Wordpress :** un CMS initialiement conçu comme moteur de blog, c'est aujourd'hui une solution très versatile et extrêmement répandue. De nombreux utilisateurs sont familiés avec son administration et c'est une technologie très demandée. Personnellement maîtrise parfaitement la création de **thème sur-mesure**, **optimisé SEO** et très rapide. Je réalise des sites Wordpress uniquement dans le périmètre _vitrine + blog_.  
   A vrai dire **Wordpress** est un excellent outil pour **créer son site soi-même** quand on ne sait pas coder, et je serais ravi de vous épauler dans cette entreprise et vous assister sur les points demandant réellement un niveau technique.
 - **Zola :** aujourd'hui des solutions très performantes existent pour générer des sites dits 'statiques'. Bien sûr le contenu est éditable et évolue, mais la nature même du site est du pur HTML, ce qui a plusieurs avantages comme rendre le site pratiquement inattaquable par piratage, et beaucoup plus rapide. Mon site est réalisé avec cette technologie. Le frein à l'adoption est la nécessité de créér ses contenus en <em>markdown</em>, un langage très simple pour formatter du texte.
 - **Python / Django :** si vous avez des besoins très spécifiques et que la sécurité et les performances sont importantes, je travaillerai sans doute avec le framework Django. C'est un outil robuste qui a fait ses preuves, et qui peut profiter de l'immense galaxie de programmes Python existants.

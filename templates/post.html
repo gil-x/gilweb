@@ -1,37 +1,26 @@
 {% extends "base.html" %} {% block content %}
 <h1 class="title">{{ page.title }}</h1>
-<p class="date">le {{ page.date }}</p>
 
-<h2>Tags:</h2>
-<ul>
-  {% for taxonomy_category, taxonomy_values in page.taxonomies %}
-  <li>taxonomy_category = '{{ taxonomy_category }}':</li>
-  {% set taxo = get_taxonomy(kind=taxonomy_category, lang=lang) %}
-  <ul>
+<nav class="post-nav">
+  <span class="date">Le {{ page.date | date(format="%d/%m/%Y") }}</span>
+  <ul class="tags">
+    <span class="icon tag"></span>
+    {% for taxonomy_category, taxonomy_values in page.taxonomies %}
+    {% set taxo = get_taxonomy(kind=taxonomy_category, lang=lang) %}
     {% for tag in taxo.items %}
-    <li><a href="{{ tag.permalink }}">{{ tag.name }}</a></li>
+    <li class="tags__tag"><a href="{{ tag.permalink }}">{{ tag.name }}</a></li>
+    {% endfor %}
     {% endfor %}
   </ul>
-  <p>
-    <a href="{{ taxo.permalink }}"
-      >›› All posts with a tag of category '{{ taxonomy_category }}'</a
-    >
-  </p>
-  {% endfor %}
-</ul>
-<div class="content">{{ page.content | safe }}</div>
+</nav>
 
-<h2>Translations availables</h2>
-<ul>
-  {% for t in page.translations %} {% if t.lang != lang %}
-  <li><a href="{{ t.permalink }}"> {{ t.lang }} </a></li>
-  {% endif %} {% endfor %}
-</ul>
+
+
+{{ page.content | safe }}
+
 
 <p>
-  <a href="{{ get_url(path='@/blog/_index.md', lang=page.lang) }}"
-    >‹‹ back to blog</a
-  >
+  <a href="{{ get_url(path='@/blog/_index.md', lang=page.lang) }}">‹‹ Revenir à la liste des articles</a>
 </p>
 
 {% endblock content %}

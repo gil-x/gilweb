@@ -1,7 +1,7 @@
 +++
 title = "Webmaster ultra polyvalent"
 template = "page.html"
-slug = "webmaster"
+slug = "webmaster-freelance"
 
 [extra]
 menu = "services"

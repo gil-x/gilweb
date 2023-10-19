@@ -1,128 +1,70 @@
 <header class="head">
   <a class="head__logo" href="/" title="Revenir à l'accueil">
-    <img
-      class="head__logo--img"
-      src="{{ get_url(path='img/logo.svg') }}"
-      alt="Gil web logo"
-      title="Gil web"
-    />
+    <img class="head__logo--img" src="{{ get_url(path='img/logo.svg') }}" alt="Gil web logo" title="Gil web" />
   </a>
   <span class="head__menu__icon icon menu"></span>
 
   <nav class="nav">
     <ul class="ul">
       <li class="li has-child">
-        <a
-          class="link with-child {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}"
-          href="{{ get_url(path='@/services/_index.md', lang=lang) }}"
-          >Services</a
-        >
+        <a class="link with-child {% if section.extra.menu is defined and section.extra.menu == 'services' %} active {% endif %}"
+          href="{{ get_url(path='@/services/_index.md', lang=lang) }}">Services</a>
         <ul class="ul submenu">
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/applications.md', lang=lang) }}"
-              >Développement d'application</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/applications.md', lang=lang) }}">Développement
+              d'application</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/css.md', lang=lang) }}"
-              >Intégration CSS</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/css.md', lang=lang) }}">Intégration CSS</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/illustration.md', lang=lang) }}"
-              >Illustration</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/illustration.md', lang=lang) }}">Illustration</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/scraping.md', lang=lang) }}"
-              >Scraping de données</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/scraping.md', lang=lang) }}">Scraping de données</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/ux.md', lang=lang) }}"
-              >UX/UI</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/ux.md', lang=lang) }}">UX/UI</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/websites.md', lang=lang) }}"
-              >Création de sites internet</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/websites.md', lang=lang) }}">Création de sites
+              internet</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/webmaster.md', lang=lang) }}"
-              >Webmastering</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/webmaster.md', lang=lang) }}">Webmastering</a>
           </li>
           <li class="li">
-            <a
-              class="link"
-              href="{{ get_url(path='@/services/audit.md', lang=lang) }}"
-              >Audit / Conseil</a
-            >
+            <a class="link" href="{{ get_url(path='@/services/audit.md', lang=lang) }}">Audit / Conseil</a>
           </li>
         </ul>
       </li>
 
       <li class="li">
-        <a
-          class="link {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}"
-          href="{{ get_url(path='@/skills.md', lang=lang) }}"
-          >Compétences</a
-        >
+        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'skills' %} active {% endif %}"
+          href="{{ get_url(path='@/skills.md', lang=lang) }}">Compétences</a>
       </li>
 
       <li class="li">
-        <a
-          class="link {% if page.extra.menu is defined and page.extra.menu == 'about' %} active {% endif %}"
-          href="{{ get_url(path='@/about.md', lang=lang) }}"
-          >A propos</a
-        >
+        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'about' %} active {% endif %}"
+          href="{{ get_url(path='@/about.md', lang=lang) }}">A propos</a>
       </li>
-      {#
+
       <li class="li">
-        <a
-          class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% elif page.extra.menu is defined and page.extra.menu == 'blog' %} {% endif %}"
-          href="{{ get_url(path='@/blog/_index.md', lang=lang) }}"
-          >Blog</a
-        >
+        <a class="link {% if section.extra.menu is defined and section.extra.menu == 'blog' %} active {% elif page.extra.menu is defined and page.extra.menu == 'blog' %} {% endif %}"
+          href="{{ get_url(path='@/blog/_index.md', lang=lang) }}">Blog</a>
       </li>
-      #}
+
       <li class="li">
-        <a
-          class="link {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
-          href="{{ get_url(path='@/contact.md', lang=lang) }}"
-          >Contact</a
-        >
+        <a class="link {% if page.extra.menu is defined and page.extra.menu == 'contact' %} active {% endif %}"
+          href="{{ get_url(path='@/contact.md', lang=lang) }}">Contact</a>
       </li>
     </ul>
 
     <div class="nav_social">
-      <a
-        href="https://www.instagram.com/gil_dessine/"
-        target="_blank"
-        aria-label="Go see my Instagram account"
-        class="icon instagram"
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/gino-ladowitch/"
-        target="_blank"
-        aria-label="Let's keep in touch on LinkedIn"
-        class="icon linkedin"
-      ></a>
+      <a href="https://www.instagram.com/gil_dessine/" target="_blank" aria-label="Go see my Instagram account"
+        class="icon instagram"></a>
+      <a href="https://www.linkedin.com/in/gino-ladowitch/" target="_blank" aria-label="Let's keep in touch on LinkedIn"
+        class="icon linkedin"></a>
     </div>
   </nav>
 </header>

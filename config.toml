@@ -4,6 +4,10 @@ build_search_index = true
 default_language = "fr"
 generate_feed = true
 
+taxonomies = [
+    { name = "tags", feed = true},
+]
+
 [markdown]
 highlight_code = true
 

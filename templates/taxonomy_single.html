@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block content %}
+<h1>Articles avec le tag {{term.name}}</h1>
+
+<ul style=" max-width: 720px; margin: 0 auto; min-height: calc(100vh - 80px - 165px - 67px);">
+    {% for page in term.pages %}
+    <li><a href="{{ page.permalink | safe }}">{{page.title | safe }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock content %}

@@ -52,6 +52,9 @@
   &.menu::before {
     content: "m";
   }
+  &.tag::before {
+    content: "T";
+  }
 }
 
 li:not(.li) {

@@ -12,6 +12,9 @@
 
   {% if section.extra.menu is defined and section.extra.menu == 'home' %}
   <link rel="stylesheet" href="{{get_url(path='animation.css')}}" /> {% endif %}
+  {% if section.extra.menu is defined and section.extra.menu == 'blog' or page.extra.menu is defined and
+  page.extra.menu == 'blog' %}
+  <link rel="stylesheet" href="{{get_url(path='blog.css')}}" /> {% endif %}
 
   {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
   page.extra.menu == 'services' or page.extra.menu is defined and
@@ -19,8 +22,6 @@
   page.extra.menu == 'skills'%}
   <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}" />
   <link rel="stylesheet" href="{{get_url(path='page.css')}}" /> {% endif %}
-
-
   <title>
     {% if section.extra.meta_title is defined %}
     {{ section.extra.meta_title }}
