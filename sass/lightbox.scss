@@ -9,7 +9,7 @@ body {
   gap: 20px;
   margin: 40px 0;
 
-  & > a {
+  a {
     display: inline-block;
     overflow: hidden;
     text-align: center;
@@ -17,13 +17,22 @@ body {
 
     img {
       width: auto;
-      height: 100%;
+      // height: 100%;
     }
   }
 
   a.hidden {
     width: 0;
   }
+}
+
+.gallery p {
+  // markdown galleries
+  max-width: 720px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
 }
 
 .legend-box {

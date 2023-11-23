@@ -19,7 +19,8 @@
   {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
   page.extra.menu == 'services' or page.extra.menu is defined and
   page.extra.menu == 'about' or page.extra.menu is defined and
-  page.extra.menu == 'skills'%}
+  page.extra.menu == 'skills' or page.extra.menu is defined and
+  page.extra.menu == 'blog'%}
   <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}">
   <link rel="stylesheet" href="{{get_url(path='page.css')}}"> {% endif %}
   <title>
@@ -52,7 +53,7 @@
   </footer>
 
   {# tera
-  <pre data-lang="json" class="tera hidden">{{ __tera_context }}</pre>
+  <pre data-lang="json" class="tera ">{{ __tera_context }}</pre>
   #}
 
 
@@ -60,7 +61,8 @@
 
 
   {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
-  page.extra.menu == 'services' %}
+  page.extra.menu == 'services' or page.extra.menu is defined and
+  page.extra.menu == 'blog' %}
   <script src="{{get_url(path='js/lightbox.js')}}" defer></script>
   {% endif %}
 

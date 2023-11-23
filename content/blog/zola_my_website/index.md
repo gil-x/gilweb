@@ -5,7 +5,7 @@ slug = "faire-son-site-avec-zola"
 template = "post.html"
 
 [taxonomies]
-tags = [ "EcoConception", "JamStack", "Tech", "webdesign", "zola"  ]
+tags = [ "EcoConception", "JamStack", "Tech", "Webdesign", "Zola"  ]
 
 [extra]
 menu = "blog"

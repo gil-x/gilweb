@@ -39,7 +39,6 @@ class Gallery {
         );
 
         if (event.target.classList.contains("cat-all")) {
-          console.log("yolo");
           categories.forEach((category) => {
             category.classList.remove("off");
           });
