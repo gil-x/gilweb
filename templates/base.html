@@ -2,26 +2,26 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="{{get_url(path='main.css' )}}" />
+  <link rel="stylesheet" href="{{get_url(path='main.css' )}}">
 
   {% if page.extra.menu is defined and page.extra.menu == 'contact' %}
-  <link rel="stylesheet" href="{{get_url(path='contact.css' )}}" /> {% endif %}
+  <link rel="stylesheet" href="{{get_url(path='contact.css' )}}"> {% endif %}
 
   {% if section.extra.menu is defined and section.extra.menu == 'home' %}
-  <link rel="stylesheet" href="{{get_url(path='animation.css')}}" /> {% endif %}
+  <link rel="stylesheet" href="{{get_url(path='animation.css')}}"> {% endif %}
   {% if section.extra.menu is defined and section.extra.menu == 'blog' or page.extra.menu is defined and
   page.extra.menu == 'blog' %}
-  <link rel="stylesheet" href="{{get_url(path='blog.css')}}" /> {% endif %}
+  <link rel="stylesheet" href="{{get_url(path='blog.css')}}"> {% endif %}
 
   {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
   page.extra.menu == 'services' or page.extra.menu is defined and
   page.extra.menu == 'about' or page.extra.menu is defined and
   page.extra.menu == 'skills'%}
-  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}" />
-  <link rel="stylesheet" href="{{get_url(path='page.css')}}" /> {% endif %}
+  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}">
+  <link rel="stylesheet" href="{{get_url(path='page.css')}}"> {% endif %}
   <title>
     {% if section.extra.meta_title is defined %}
     {{ section.extra.meta_title }}
@@ -33,9 +33,8 @@
 
   </title>
   <meta name="description"
-    content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure." />
-  <meta name="description"
-    content="Je mets à votre disposition plus de 10 ans d'expérience dans la conception de sites web" />
+    content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure.">
+
 </head>
 
 <body class="body">

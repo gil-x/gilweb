@@ -4,7 +4,7 @@
   alt = asset.params.alt or asset|title %} {% set title = asset.params.title or
   asset|title %}
   <a href="{{ get_url(path=asset) }}" target="_blank">
-    <img src="{{ image.url }}" title="{{ title }}" alt="{{ alt }}" />
+    <img src="{{ image.url }}" title="{{ title }}" alt="{{ alt }}">
   </a>
 
   {%- endif -%} {%- endfor -%}
