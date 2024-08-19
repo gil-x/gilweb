@@ -166,11 +166,11 @@ $bp-medium: 960px;
     width: auto;
     height: 100%;
     margin: 0 -55% -1% 0;
-    transform: translateX(50vw);
-    transition: transform 1.5s;
+    // transform: translateX(50vw);
+    // transition: transform 1.5s;
 
     &.visible {
-      transform: translateX(0);
+      // transform: translateX(0);
     }
   }
 }
@@ -221,7 +221,7 @@ $bp-medium: 960px;
 }
 
 #body {
-  animation: breathe 6s infinite alternate;
+  animation: breathe 6s 6s infinite alternate;
   transform-box: fill-box;
   transform-origin: top;
 }

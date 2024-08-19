@@ -51,7 +51,7 @@ Bien sûr pour apprécier, il faut regarder le code, mesurer les performances…
     {{ get_img(
         path='img/services/css/quelbonplan.png',
         title="Quel Bon Plan | Application Angular.",
-        alt="Des mois de travail pour rréécrire tous les CSS de l'application et obtenir des performances parfaites sur Lighthouse.",
+        alt="Des mois de travail pour réécrire tous les CSS de l'application et obtenir des performances parfaites sur Lighthouse.",
         cls="main-dual__side--img",
         width=120, height=120) }}</a>
     <a href="/img/services/css/nl_musee_curie.jpg">

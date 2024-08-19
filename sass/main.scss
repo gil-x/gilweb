@@ -1,17 +1,13 @@
 @import "vars";
 @import "head";
 @import "home";
-// @import "contact";
-// @import "page";
-// @import "animation";
-// @import "lightbox";
 
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -113,7 +109,7 @@ p {
 
   .icon {
     &::before {
-      font-size: var(--font-root);
+      font-size: var(--font-large);
     }
     margin: 0 5px;
   }

@@ -2,48 +2,43 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="{{get_url(path='main.css' )}}">
+  <link rel="stylesheet" href="{{get_url(path='main.css' )}}" />
 
   {% if page.extra.menu is defined and page.extra.menu == 'contact' %}
-  <link rel="stylesheet" href="{{get_url(path='contact.css' )}}"> {% endif %}
-
-  {% if section.extra.menu is defined and section.extra.menu == 'home' %}
-  <link rel="stylesheet" href="{{get_url(path='animation.css')}}"> {% endif %}
-  {% if section.extra.menu is defined and section.extra.menu == 'blog' or page.extra.menu is defined and
-  page.extra.menu == 'blog' %}
-  <link rel="stylesheet" href="{{get_url(path='blog.css')}}"> {% endif %}
-
-  {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
-  page.extra.menu == 'services' or page.extra.menu is defined and
-  page.extra.menu == 'about' or page.extra.menu is defined and
-  page.extra.menu == 'skills' or page.extra.menu is defined and
-  page.extra.menu == 'blog'%}
-  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}">
-  <link rel="stylesheet" href="{{get_url(path='page.css')}}"> {% endif %}
+  <link rel="stylesheet" href="{{get_url(path='contact.css' )}}" />
+  {% endif %} {% if section.extra.menu is defined and section.extra.menu ==
+  'home' %}
+  <link rel="stylesheet" href="{{get_url(path='animation.css')}}" />
+  {% endif %} {% if section.extra.menu is defined and section.extra.menu ==
+  'blog' or page.extra.menu is defined and page.extra.menu == 'blog' %}
+  <link rel="stylesheet" href="{{get_url(path='blog.css')}}" />
+  {% endif %} {% if section.extra.menu is defined and section.extra.menu ==
+  'services' or page.extra.menu is defined and page.extra.menu == 'services'
+  or page.extra.menu is defined and page.extra.menu == 'about' or
+  page.extra.menu is defined and page.extra.menu == 'skills' or
+  page.extra.menu is defined and page.extra.menu == 'blog'%}
+  <link rel="stylesheet" href="{{get_url(path='lightbox.css')}}" />
+  <link rel="stylesheet" href="{{get_url(path='page.css')}}" />
+  {% endif %}
   <title>
-    {% if section.extra.meta_title is defined %}
-    {{ section.extra.meta_title }}
-    {% elif page.extra.meta_title is defined %}
-    {{ page.extra.meta_title }}
-    {% else %}
-    Développeur web expert CSS, eco-conception, Python, freelance Paris Bretagne
-    {% endif %}
-
+    {% if section.extra.meta_title is defined %} {{ section.extra.meta_title
+    }} {% elif page.extra.meta_title is defined %} {{ page.extra.meta_title }}
+    {% else %} Développeur web expert CSS, eco-conception, Python, freelance
+    Paris Bretagne {% endif %}
   </title>
   <meta name="description"
-    content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure.">
-
+    content="Webmaster freelance & développeur web sur Paris | Graphiste & Illustrateur | Développement d'applications Python et sites web sur-mesure." />
 </head>
 
 <body class="body">
   {% include "parts/header.html" %} {% block content %} {% endblock %}
 
   <footer class="footer">
-    Copyright ©2023 Gino Ladowitch | Tous droits réservés | <a class="a" href={{ get_url(path='@/legal.md' , lang=lang)
-      }} rel="nofollow">Mentions légales</a>
+    Copyright ©2024 Gino Ladowitch | Tous droits réservés |
+    <a class="a" href="{{ get_url(path='@/legal.md' , lang=lang)}}" rel="nofollow">Mentions légales</a>
     <a href="https://www.instagram.com/gil_dessine/" target="_blank" aria-label="Go see my Instagram account"
       class="icon instagram" style="color: white"></a>
     <a href="https://www.linkedin.com/in/gino-ladowitch/" target="_blank" aria-label="Let's keep in touch on LinkedIn"
@@ -53,21 +48,17 @@
   </footer>
 
   {# tera
-  <pre data-lang="json" class="tera ">{{ __tera_context }}</pre>
+  <pre data-lang="json" class="tera">{{ __tera_context }}</pre>
   #}
-
 
   <script src="{{get_url(path='js/main.js')}}" defer></script>
 
-
-  {% if section.extra.menu is defined and section.extra.menu == 'services' or page.extra.menu is defined and
-  page.extra.menu == 'services' or page.extra.menu is defined and
-  page.extra.menu == 'blog' %}
+  {% if section.extra.menu is defined and section.extra.menu == 'services' or
+  page.extra.menu is defined and page.extra.menu == 'services' or
+  page.extra.menu is defined and page.extra.menu == 'blog' %}
   <script src="{{get_url(path='js/lightbox.js')}}" defer></script>
-  {% endif %}
-
-
-  {% if section.extra.menu is defined and section.extra.menu == 'home' %}
+  {% endif %} {% if section.extra.menu is defined and section.extra.menu ==
+  'home' %}
   <script src="{{get_url(path='js/animation.js')}}" defer></script>
   {% endif %}
 </body>

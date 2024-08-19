@@ -56,6 +56,11 @@
   align-items: center;
   justify-content: space-between;
 
+  &__menu__icon {
+    width: 28px;
+    height: 24px;
+  }
+
   &__logo {
     display: flex;
 
@@ -177,7 +182,7 @@
     }
   }
 
-  .icon.head__menu__icon {
+  .head__menu__icon {
     display: none;
   }
 
